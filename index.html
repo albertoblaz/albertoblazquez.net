@@ -1,81 +1,144 @@
-﻿<head>
+﻿<html lang="en">
+<!-- html lang="en" manifest="assets/cache/offline.appcache" -->
+
+<head>
 
    <!-- Meta -->
    <meta charset="UTF-8" />
-   <meta name="apple-mobile-web-app-capable" content="yes" />
-   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
    <meta name='viewport' content='initial-scale=1.0,width=device-width' />
 
-   <!--meta property="fb:admins"      content="588883490,100000237607356,741094668" /-->
    <meta property="og:type"        content="website" />
-   <meta property="og:title"       content="My title" />
-   <meta property="og:description" content="My description" />
-   <meta property="og:url"         content="URL" />
-   <meta property="og:image"       content="URL Image" />
+   <meta property="og:title"       content="Alberto Blazquez Website" />
+   <meta property="og:description" content="Personal website created to display my CV and my skills" />
+   <meta property="og:url"         content="http://albertoblazquez.net" />
+   <meta property="og:image"       content="" />
 
-   <title>Web App Example in iOS</title>
+   <title>Alberto Blázquez</title>
 
    <!-- CSS -->
-   <link type="text/css" rel="stylesheet" media="all" href="/css/styles.css" />
-
-   <!-- WebApp iOS Links -->
-   <link rel="apple-touch-icon" href="/images/lm57.png" />
-   <link rel="apple-touch-icon" href="/images/lm72.png"  sizes="72x72" />
-   <link rel="apple-touch-icon" href="/images/lm114.png" sizes="114x114" />
-
-   <link rel="apple-touch-startup-image" href="/images/startup-iphone.png"  sizes="320x460"  media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" />
-   <link rel="apple-touch-startup-image" href="/images/startup-iphone4.png" sizes="640x920"  media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" />
-   <link rel="apple-touch-startup-image" href="/images/lmsplash1004.png"    sizes="768x1004" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
-   <link rel="apple-touch-startup-image" href="/images/lmsplash748.png"     sizes="1024x748" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+   <link type="text/css" rel="stylesheet" media="all" href="css/styles.css" />
 
 </head>
 
 
 <body>
 
-	<div class="wrapper">
+	<div class="wrapper ten columns auto">
 		
-		<aside class="left">
-			<figure>
-				<img src="img/logo.png" alt="" />
-				<figcaption>
-					<h1>Alberto Blázquez</h1>
-				</figcaption>
-			</figure>
+		<aside class="fixed left sidebar three columns">
+		
+			<div class="inner">
+
+				<figure class="logo">
+					<img src="img/logo.png" alt="Alberto Blázquez" />
+					
+					<h1 class="title">Alberto Blázquez</h1>
+					
+					<figcaption class="purple about">
+						<p>Computer scientist born in Madrid </p>
+						<p>Technology enthusiast and autodidactic</p>
+						<p>Dreamer who loves music and cinema</p>
+					</figcaption>
+				</figure>
+				<br>
+				
+				<nav class="menu">
+					<ul class="double block list">
+						<li class="nav-item blue">
+							<a href="#home"><strong>Home</strong></a>
+						</li>
+						<li class="nav-item violet">
+							<a href="#cv"><strong>CV</strong></a>
+						</li>
+						<li class="nav-item red">
+							<a href="#projects"><strong>Projects</strong></a>
+						</li>
+						
+						<!--li class="item"><a href="#" class="white orange">Blog</a></li-->
+						
+						<li class="nav-item yellow">
+							<a href="#hobbies"><strong>Hobbies</strong></a>
+						</li>
+						<li class="nav-item green">
+							<a href="#contact"><strong>Contact</strong></a>
+						</li>
+					</ul>
+				</nav>
+				<br>
+				
+				<nav class="social">
+					<h3 class="headline sub inline">Social Links</h3>
+					
+					<ul class="single inline list">
+						<li class="item">
+							<a href="mailto:hola@albertoblazquez.net" class="favicon email"></a>
+						</li>
+						
+						<li class="item">
+							<a href="https://twitter.com/albertoblaz" class="favicon twitter"></a>
+						</li>
+						
+						<li class="item">
+							<a href="http://www.linkedin.com/in/albertoblaz" class="favicon linkedin"></a>
+						</li>
+						
+						<li class="item">
+							<a href="https://github.com/albertoblaz" class="favicon github"></a>
+						</li>
+						
+						<li class="item">
+							<a href="http://www.lastfm.es/user/LesPaul100" class="favicon lastfm"></a>
+						</li>
+
+						<!-- li class="favicon filmaffinity">FilmAffinity</li -->
+					</ul>
+				</nav>
+
+			</div>
 			
-			<nav id="menu">
-				<ul>
-					<li class="item">Home</li>
-					<li class="item">CV</li>
-					<li class="item">Projects</li>
-					<li class="item">Blog</li>
-					<li class="item">Hobbies</li>
-					<li class="item">Contact</li>
-				</ul>
-			</nav>
+			<!--
+			<div class="colors">
+				<span class="square blue"></span>
+				<span class="square violet"></span>
+				<span class="square red"></span>
+				<span class="square yellow"></span>
+				<span class="square green"></span>
+			</div>
+			-->
 			
-			<nav class="social">
-				<ul>
-					<li class="link email">Email</li>
-					<li class="link twitter">Twitter</li>
-					<li class="link linkedin">LinkedIn</li>
-					<li class="link github">GitHub</li>
-					<!--
-					<li class="link lastfm">Last.FM</li>
-					<li class="link filmaffinity">FilmAffinity</li>
-					-->
-				</ul>
-			</nav>
 		</aside>
 		
 		
 		
-		<div class="content right">
+		<div class="content right eight columns">
 		
-			<section id="Home">
-				<h2 class="headline">Home</h2>
-				
+			<section id="home" class="violet">
 				<div>
+					<p>Computer scientist and software developer. Still a student of a master degree on software engineering</p>
+					<p>I'm 21 years old and I was born in Madrid, Spain, the city where I'm living currently</p>
+					<p>Technology enthusiast, always trying to learn lots of things by myself</p>
+					<p>Loving music and cinema, sports and travelling</p>
+				</div>
+				
+								<div>
+					<p>Computer scientist and software developer. Still a student of a master degree on software engineering</p>
+					<p>I'm 21 years old and I was born in Madrid, Spain, the city where I'm living currently</p>
+					<p>Technology enthusiast, always trying to learn lots of things by myself</p>
+					<p>Loving music and cinema, sports and travelling</p>
+				</div>
+								<div>
+					<p>Computer scientist and software developer. Still a student of a master degree on software engineering</p>
+					<p>I'm 21 years old and I was born in Madrid, Spain, the city where I'm living currently</p>
+					<p>Technology enthusiast, always trying to learn lots of things by myself</p>
+					<p>Loving music and cinema, sports and travelling</p>
+				</div>
+								<div>
+					<p>Computer scientist and software developer. Still a student of a master degree on software engineering</p>
+					<p>I'm 21 years old and I was born in Madrid, Spain, the city where I'm living currently</p>
+					<p>Technology enthusiast, always trying to learn lots of things by myself</p>
+					<p>Loving music and cinema, sports and travelling</p>
+				</div>
+								<div>
 					<p>Computer scientist and software developer. Still a student of a master degree on software engineering</p>
 					<p>I'm 21 years old and I was born in Madrid, Spain, the city where I'm living currently</p>
 					<p>Technology enthusiast, always trying to learn lots of things by myself</p>
@@ -103,17 +166,19 @@
 			</section>
 			
 			
-			<section id="CV" class="hidden">
-				<h2 class="headline">CV</h2>
+			<section id="cv" class="">
+			
+				<a href="assets/cv/CV_AlbertoBlazquez.pdf">
+					<figure class="cv-pdf">
+						<img src="assets/cv/CV_AlbertoBlazquez.jpg" />
+					</figure>
+				</a>
 				
-				<object>
-				</object>
 			</section>
 			
 			
-			<section id="Projects" class="hidden">
-				<h2 class="headline">Projects</h2>
-				
+			<section id="projects" class="hidden">
+
 				<ul>
 					<li class="project">
 						<figure class="left">
@@ -143,19 +208,17 @@
 						
 					</li>
 				</ul>
+				
 			</section>
 			
-			
-			<section id="Blog" class="hidden">
-				<h2 class="headline">Blog</h2>
-				
-				<!-- Nothing Yet ... -->
+			<!--
+			<section id="blog" class="hidden">
+
 			</section>
+			-->
 			
+			<section id="hobbies" class="hidden">
 			
-			<section id="Hobbies" class="hidden">
-				<h2 class="headline">Hobbies</h2>
-				
 				<ul>
 					<li class="hobbie">Music</li>
 					<li class="hobbie">Cinema</li>
@@ -163,12 +226,12 @@
 					<li class="hobbie">Books</li>
 					<li class="hobbie">Sports</li>
 				</ul>
+				
 			</section>
 			
 			
-			<section id="Contact" class="hidden">
-				<h2 class="headline">Contact</h2>
-				
+			<section id="contact" class="hidden">
+			
 				<div class="data">
 					<ul>
 						<li class="data-info">Email</li>
@@ -188,6 +251,7 @@
 					
 					<input type="submit" value="Send Mail" />
 				</form>
+				
 			</section>
 		
 		</div>
@@ -195,13 +259,13 @@
 		
 		
 		<div class="clear"></div>
-
+		
 	</div>
 
 
 	<!-- JavaScript -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+	<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script-->
+	<!--script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script-->
 
 </body>
 
