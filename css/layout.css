@@ -1,0 +1,61 @@
+
+/***  Main Layout Components  ***/
+/*
+.wrapper { 
+	height : 100%;
+	width  : 100%;
+}
+
+.sidebar { 
+	height : 100%;
+	width  : 30%;
+}
+
+.content { 
+	height : 100%;
+	width  : 70%;
+}
+*/
+
+.sidebar { 
+	height   : 100%;
+	position : relative;
+}
+
+
+/***  Columns  ***/
+
+.columns.one       { width : 8.333333333333333333333%; }
+.columns.two       { width : 16.66666666666666666666%; }
+.columns.three   { width : 25%;  }
+.columns.four     { width : 33.33333333333333333333%; }
+.columns.five     { width : 41.66666666666666666666%; }
+.columns.six       { width : 50%;  }
+.columns.seven   { width : 58.33333333333333333333%; }
+.columns.eight   { width : 66.66666666666666666666%; }
+.columns.nine     { width : 75%;  }
+.columns.ten       { width : 83.33333333333333333333%; }
+.columns.eleven { width : 91.66666666666666666666%; }
+.columns.twelve { width : 100%; }
+
+
+/***  Auxiliary Styles  ***/
+
+.fixed   { position: fixed; }
+
+.left     { float  : left;  }
+.right   { float  : right; }
+.auto     { margin : auto;  }
+.center { text-align : center; }
+
+.clear   { clear : both; }
+
+.block,
+.block .item { 
+	display : block;
+}
+
+.inline, 
+.inline .item {
+	display : inline;
+}

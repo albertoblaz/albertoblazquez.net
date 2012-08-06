@@ -1,0 +1,100 @@
+
+/***  Sidebar  ***/
+
+.inner {
+	height : 100%;
+	width  : 80%;
+	margin : auto;
+}
+
+	.logo {
+		margin : 0;
+	}
+
+	.title {
+		margin : 0.75em 0 0.75em 0;
+		border-bottom : 1px solid #DBD9D4;
+		/* border-bottom: 1px solid #E4E4E5; */
+		padding-bottom : 0.2em;
+	}
+
+	.about p {
+		margin : 0;
+	}
+
+	.list.single { padding-left : 2em; }
+	.list.double { padding-left : 4em; }
+	
+	.nav-item  {
+		border-radius : 5px;
+		line-height : 1.75em;
+		padding-left  : 15px;
+	}
+	
+	.nav-item a { color : #EFEFEF; }
+	
+	.favicon {
+		border-radius : 3px;
+		display : inline-block;
+		padding : 4px;
+		height  : 18px;
+		width   : 18px;
+	}
+	
+.colors {
+	position : absolute;
+	bottom   : 0;
+}
+
+	.square {
+		display : block;
+		float   : left;
+		/*
+		height  : 2.5em;
+		width   : 3.25em;
+		*/
+		height  : 2.75em;
+		width   : 4em;
+	}
+	
+	.square:first-child { border-top-left-radius  : 5px; }
+	.square:last-child   { border-top-right-radius : 5px; }
+	
+	/*
+	.square:first-child { border-top-left-radius  : 3px; }
+	.square:last-child   { border-top-right-radius : 3px; }
+	*/
+		
+/***  'Home' Section  ***/
+
+/* (code) */
+
+
+/***  'CV' Section  ***/
+
+.cv-pdf img{
+	width : 100%;
+}
+
+/*
+.cv-pdf {
+	border-top: 4px solid #CCC;
+	border-bottom: 4px solid #CCC;
+	
+	height: 1133px;
+	width: 820px;
+}
+*/
+
+/***  'Projects' Section  ***/
+
+/* (code) */
+
+
+/***  'Hobbies' Section  ***/
+
+/* (code) */
+
+
+/***  'Contact' Section  ***/
+
