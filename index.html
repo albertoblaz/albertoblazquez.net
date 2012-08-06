@@ -1,0 +1,208 @@
+﻿<head>
+
+   <!-- Meta -->
+   <meta charset="UTF-8" />
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+   <meta name='viewport' content='initial-scale=1.0,width=device-width' />
+
+   <!--meta property="fb:admins"      content="588883490,100000237607356,741094668" /-->
+   <meta property="og:type"        content="website" />
+   <meta property="og:title"       content="My title" />
+   <meta property="og:description" content="My description" />
+   <meta property="og:url"         content="URL" />
+   <meta property="og:image"       content="URL Image" />
+
+   <title>Web App Example in iOS</title>
+
+   <!-- CSS -->
+   <link type="text/css" rel="stylesheet" media="all" href="/css/styles.css" />
+
+   <!-- WebApp iOS Links -->
+   <link rel="apple-touch-icon" href="/images/lm57.png" />
+   <link rel="apple-touch-icon" href="/images/lm72.png"  sizes="72x72" />
+   <link rel="apple-touch-icon" href="/images/lm114.png" sizes="114x114" />
+
+   <link rel="apple-touch-startup-image" href="/images/startup-iphone.png"  sizes="320x460"  media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" />
+   <link rel="apple-touch-startup-image" href="/images/startup-iphone4.png" sizes="640x920"  media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" />
+   <link rel="apple-touch-startup-image" href="/images/lmsplash1004.png"    sizes="768x1004" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+   <link rel="apple-touch-startup-image" href="/images/lmsplash748.png"     sizes="1024x748" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+
+</head>
+
+
+<body>
+
+	<div class="wrapper">
+		
+		<aside class="left">
+			<figure>
+				<img src="img/logo.png" alt="" />
+				<figcaption>
+					<h1>Alberto Blázquez</h1>
+				</figcaption>
+			</figure>
+			
+			<nav id="menu">
+				<ul>
+					<li class="item">Home</li>
+					<li class="item">CV</li>
+					<li class="item">Projects</li>
+					<li class="item">Blog</li>
+					<li class="item">Hobbies</li>
+					<li class="item">Contact</li>
+				</ul>
+			</nav>
+			
+			<nav class="social">
+				<ul>
+					<li class="link email">Email</li>
+					<li class="link twitter">Twitter</li>
+					<li class="link linkedin">LinkedIn</li>
+					<li class="link github">GitHub</li>
+					<!--
+					<li class="link lastfm">Last.FM</li>
+					<li class="link filmaffinity">FilmAffinity</li>
+					-->
+				</ul>
+			</nav>
+		</aside>
+		
+		
+		
+		<div class="content right">
+		
+			<section id="Home">
+				<h2 class="headline">Home</h2>
+				
+				<div>
+					<p>Computer scientist and software developer. Still a student of a master degree on software engineering</p>
+					<p>I'm 21 years old and I was born in Madrid, Spain, the city where I'm living currently</p>
+					<p>Technology enthusiast, always trying to learn lots of things by myself</p>
+					<p>Loving music and cinema, sports and travelling</p>
+				</div>
+				
+				<div>
+					<h3 class="headline sub">Specialties</h3>
+					
+					<div>
+						<figure class="left">
+							<img src="circles.png" />
+						</figure>
+						
+						<ul class="right">
+							<li class="feature">Human-Computer Interaction</li>
+							<li class="feature">OO and Functional Programming</li>
+							<li class="feature">Web and Mobile Development</li>
+							<li class="feature">Software Engineering</li>
+						</ul>
+						
+						<div class="clear"></div>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section id="CV" class="hidden">
+				<h2 class="headline">CV</h2>
+				
+				<object>
+				</object>
+			</section>
+			
+			
+			<section id="Projects" class="hidden">
+				<h2 class="headline">Projects</h2>
+				
+				<ul>
+					<li class="project">
+						<figure class="left">
+							<img src="img/project1.png" alt="" />
+						</figure>
+						
+						<div class="right">
+							<div>
+								<h3 class="headline sub left">Usability Planner</h3>
+								<datetime class="right">20th June, 2012</datetime>
+								<div class="clear"></div>
+							</div>
+							
+							<p class="description"></p>
+							
+							<!-- links -->
+						</div>
+						
+						<div class="clear"></div>
+					</li>
+					
+					<li class="project">
+						
+					</li>
+					
+					<li class="project">
+						
+					</li>
+				</ul>
+			</section>
+			
+			
+			<section id="Blog" class="hidden">
+				<h2 class="headline">Blog</h2>
+				
+				<!-- Nothing Yet ... -->
+			</section>
+			
+			
+			<section id="Hobbies" class="hidden">
+				<h2 class="headline">Hobbies</h2>
+				
+				<ul>
+					<li class="hobbie">Music</li>
+					<li class="hobbie">Cinema</li>
+					<li class="hobbie">Series</li>
+					<li class="hobbie">Books</li>
+					<li class="hobbie">Sports</li>
+				</ul>
+			</section>
+			
+			
+			<section id="Contact" class="hidden">
+				<h2 class="headline">Contact</h2>
+				
+				<div class="data">
+					<ul>
+						<li class="data-info">Email</li>
+						<li class="data-info">Follow</li>
+						<li class="data-info">Phone</li>
+						<li class="data-info">Skype</li>
+					</ul>
+				</div>
+				
+				<h3 class="headline sub">Get in touch!</h3>
+				
+				<form method="POST" action="php/contact.php">
+					<input type="text" placeholder="Name..." />
+					<input type="email" placeholder="Email..." />
+					
+					<textarea></textarea>
+					
+					<input type="submit" value="Send Mail" />
+				</form>
+			</section>
+		
+		</div>
+
+		
+		
+		<div class="clear"></div>
+
+	</div>
+
+
+	<!-- JavaScript -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+</body>
+
+</html>
