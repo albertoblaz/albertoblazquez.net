@@ -1,7 +1,7 @@
 
 /***  State Components  ***/
 
-.hidden   { display : none;  }
+.hidden  { display : none;  }
 .visible { display : block; }
 
 .tab.active {}

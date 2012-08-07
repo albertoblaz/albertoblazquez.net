@@ -3,31 +3,31 @@
 
 datetime,
 h1, h2, h3, h4, h5, h6,
-.black   { color : #464646; }
-.white   { color : #EFEFEF; }
+.black  { color : #464646; }
+.white  { color : #EFEFEF; }
 
 a,
 .purple { color : #915BD3; }
 /* .purple { color : rgb(178, 161, 199); } */
 
-.red       { background-color : #DA1E1F; }
+.red    { background-color : #DA1E1F; }
 .violet { background-color : #662D91; }
-.blue     { background-color : #00A9C5; }
-.green   { background-color : #61B832; }
+.blue   { background-color : #00A9C5; }
+.green  { background-color : #61B832; }
 .yellow { background-color : #FFA403; }
 
-.lucid  { opacity : 0.65; filter:alpha(opacity=65); }
+.lucid  { opacity : 0.65; filter : alpha(opacity=65); }
 
 
 /***  Favicons Thumbnails  ***/
 
 .favicon { background : #2D2D2D no-repeat center center; }
 
-.favicon.email       { background-image : url('../img/favicons/email.png');    }
-.favicon.twitter   { background-image : url('../img/favicons/twitter.png');  }
+.favicon.email    { background-image : url('../img/favicons/email.png');    }
+.favicon.twitter  { background-image : url('../img/favicons/twitter.png');  }
 .favicon.linkedin { background-image : url('../img/favicons/linkedin.png'); }
-.favicon.github     { background-image : url('../img/favicons/github.png');   }
-.favicon.lastfm     { background-image : url('../img/favicons/lastfm.png');   }
+.favicon.github   { background-image : url('../img/favicons/github.png');   }
+.favicon.lastfm   { background-image : url('../img/favicons/lastfm.png');   }
 .favicon.filmaffi { background-image : url('../img/favicons/filmaffi.png'); }
 
 
@@ -46,11 +46,11 @@ body {
 
 @font-face {
     font-family: 'Museo300';
-    src: url('../assets/fonts/museo300-regular-webfont.eot');
-    src: url('../assets/fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../assets/fonts/museo300-regular-webfont.woff') format('woff'),
-         url('../assets/fonts/museo300-regular-webfont.ttf') format('truetype'),
-         url('../assets/fonts/museo300-regular-webfont.svg#Museo300Regular') format('svg');
+    src: url('../fonts/museo300-regular-webfont.eot');
+    src: url('../fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo300-regular-webfont.woff') format('woff'),
+         url('../fonts/museo300-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo300-regular-webfont.svg#Museo300Regular') format('svg');
     font-weight: 300;
     font-style: normal;
 }

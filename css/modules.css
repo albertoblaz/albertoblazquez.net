@@ -11,7 +11,7 @@
 *//* border-bottom: 1px solid #E4E4E5; */
 
 
-.about    { margin : 1em 0; }
+.about   { margin : 1em 0; }
 .about p { margin : 0;     }
 
 .list.single { padding-left : 2em; }
@@ -21,7 +21,7 @@
 
 	.nav-item  {
 		border-radius : 5px;
-		line-height : 1.75em;
+		line-height   : 1.75em;
 		padding-left  : 15px;
 	}
 
@@ -47,7 +47,7 @@
 		width   : 4em;
 	}
 	
-	.square:first-child { border-top-left-radius  : 5px; }
+	.square:first-child  { border-top-left-radius  : 5px; }
 	.square:last-child   { border-top-right-radius : 5px; }
 	
 
@@ -58,7 +58,7 @@
 
 /***  'CV' Section  ***/
 
-.cv-pdf img{
+.cv-pdf img {
 	width : 100%;
 }
 
@@ -79,12 +79,12 @@
 
 	.screenshot {
 		border : 1px solid #DEDEDE;
-		border-radius: 4px;
+		border-radius : 4px;
 		width : 40%;
 	}
 
 	.screenshot img { 
-		border-radius: 4px;
+		border-radius : 4px;
 		box-shadow : 2px 5px 10px 1px #CCC;
 		width : 100%;
 	}
