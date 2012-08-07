@@ -1,7 +1,12 @@
 
 /***  Colors  ***/
 
+datetime,
+h1, h2, h3, h4, h5, h6,
+.black   { color : #464646; }
 .white   { color : #EFEFEF; }
+
+a,
 .purple { color : #915BD3; }
 /* .purple { color : rgb(178, 161, 199); } */
 
@@ -13,9 +18,10 @@
 
 .lucid  { opacity : 0.65; filter:alpha(opacity=65); }
 
+
 /***  Favicons Thumbnails  ***/
 
-.favicon { background : rgb(45, 45, 45) no-repeat center center; }
+.favicon { background : #2D2D2D no-repeat center center; }
 
 .favicon.email       { background-image : url('../img/favicons/email.png');    }
 .favicon.twitter   { background-image : url('../img/favicons/twitter.png');  }

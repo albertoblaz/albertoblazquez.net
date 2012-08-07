@@ -11,7 +11,7 @@
 	width  : 30%;
 }
 
-.content { 
+.container { 
 	height : 100%;
 	width  : 70%;
 }
@@ -20,6 +20,24 @@
 .sidebar { 
 	height   : 100%;
 	position : relative;
+}
+
+.inner {
+	margin : auto;
+	
+	padding-top: 10%;
+	height : 100%;
+	width  : 80%;
+}
+
+.container {
+	padding-top: 10%;
+}
+
+/***  Columns  ***/
+
+#projects {
+	padding: 2em 0.5em;
 }
 
 
@@ -41,6 +59,9 @@
 
 /***  Auxiliary Styles  ***/
 
+.block   { display : block;  }
+.inline { display : inline; }
+
 .fixed   { position: fixed; }
 
 .left     { float  : left;  }
@@ -49,13 +70,3 @@
 .center { text-align : center; }
 
 .clear   { clear : both; }
-
-.block,
-.block .item { 
-	display : block;
-}
-
-.inline, 
-.inline .item {
-	display : inline;
-}

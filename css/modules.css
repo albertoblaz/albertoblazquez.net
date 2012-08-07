@@ -1,36 +1,30 @@
 
 /***  Sidebar  ***/
 
-.inner {
-	height : 100%;
-	width  : 80%;
-	margin : auto;
+/*
+.title {
+	margin : 0.75em 0 0.75em 0;
+	border-bottom : 1px solid #DBD9D4;
+	(border de abajo)
+	padding-bottom : 0.2em;
 }
+*//* border-bottom: 1px solid #E4E4E5; */
 
-	.logo {
-		margin : 0;
-	}
 
-	.title {
-		margin : 0.75em 0 0.75em 0;
-		border-bottom : 1px solid #DBD9D4;
-		/* border-bottom: 1px solid #E4E4E5; */
-		padding-bottom : 0.2em;
-	}
+.about    { margin : 1em 0; }
+.about p { margin : 0;     }
 
-	.about p {
-		margin : 0;
-	}
+.list.single { padding-left : 2em; }
+.list.double { padding-left : 4em; }
 
-	.list.single { padding-left : 2em; }
-	.list.double { padding-left : 4em; }
-	
+.menu {}
+
 	.nav-item  {
 		border-radius : 5px;
 		line-height : 1.75em;
 		padding-left  : 15px;
 	}
-	
+
 	.nav-item a { color : #EFEFEF; }
 	
 	.favicon {
@@ -49,10 +43,6 @@
 	.square {
 		display : block;
 		float   : left;
-		/*
-		height  : 2.5em;
-		width   : 3.25em;
-		*/
 		height  : 2.75em;
 		width   : 4em;
 	}
@@ -60,11 +50,7 @@
 	.square:first-child { border-top-left-radius  : 5px; }
 	.square:last-child   { border-top-right-radius : 5px; }
 	
-	/*
-	.square:first-child { border-top-left-radius  : 3px; }
-	.square:last-child   { border-top-right-radius : 3px; }
-	*/
-		
+
 /***  'Home' Section  ***/
 
 /* (code) */
@@ -87,8 +73,38 @@
 */
 
 /***  'Projects' Section  ***/
+.project {
+	margin-bottom : 4em;
+}
 
-/* (code) */
+	.screenshot {
+		border : 1px solid #DEDEDE;
+		border-radius: 4px;
+		width : 40%;
+	}
+
+	.screenshot img { 
+		border-radius: 4px;
+		box-shadow : 2px 5px 10px 1px #CCC;
+		width : 100%;
+	}
+
+	.profile {
+		width : 57%;
+	}
+		/*
+		.techs {
+			padding-left : 1.5em;
+		}
+		*/
+		
+		datetime { padding-top : 0.1em; }
+
+/*
+.headline {
+	margin : 0;
+}
+*/
 
 
 /***  'Hobbies' Section  ***/

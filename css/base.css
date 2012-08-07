@@ -16,10 +16,6 @@ html, body  {
 	*/
 }
 
-li {
-	list-style-type : none;
-}
-
 a,
 a:hover,
 a:focus,
@@ -33,7 +29,54 @@ hr {
 }
 */
 
+datetime,
 h1, h2, h3, h4, h5, h6 {
-	color       : rgb(70, 70, 70);
 	font-weight : normal;
+	margin : 0;
+}
+
+ol, ul { 
+	list-style-type : none;
+	margin  : 0;
+	padding : 0;
+}
+
+figure { margin : 0; }
+
+
+/***  Forms  ***/
+
+input,
+textarea {
+	border : 1px solid #DDD;
+	border-radius : 4px;
+	padding : 0.4em 0.8em;
+}
+
+input:focus,
+textarea:focus {
+	border : 1px solid #915BD3;
+}
+
+textarea {
+	margin : 1.5% 0;
+	height : 25%;
+	width  : 84%;
+}
+
+input {
+	margin-right : 1%;
+	height : 2em;
+	width  : 27%;
+}
+
+input[type="submit"] {
+	background-color : #915BD3;
+	border : none;
+	color  : white;
+	
+	height : 2.5em;
+	width  : 12em;
+	
+	cursor : pointer;
 }
