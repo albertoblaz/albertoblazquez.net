@@ -14,7 +14,7 @@ $(document).on('ready', function(){
 		contents.eq(num).removeClass(HIDDEN);
 
 		links.addClass(LUCID);
-		links.eq(num).removeClass(LUCID);
+		self.parent().removeClass(LUCID);
 		
 		self = num = null;
 	}
