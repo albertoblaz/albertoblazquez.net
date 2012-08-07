@@ -1,22 +1,24 @@
 
-$(document).on('ready', function(){
+$(document).on('ready', function() {
 
 	var LUCID    = 'lucid';
 	var HIDDEN   = 'hidden';
 	var links    = $('.menu').find('a');
 	var contents = $('.content');
 		
-	var linksEvent = function() {
+	var linksEvent = function(e) {
+		// Local jQuery vars
 		var self = $(this);
 		var num  = self.parent().prevAll().length;
-		
-		contents.addClass(HIDDEN );
-		contents.eq(num).removeClass(HIDDEN);
+		var lis  = links.parent();
 
-		links.addClass(LUCID);
-		self.parent().removeClass(LUCID);
+		// Showing just the correct '.content' section and the associated menu link
+		contents.addClass(HIDDEN ).eq(num).removeClass(HIDDEN);
+		lis.addClass(LUCID).eq(num).removeClass(LUCID);
 		
-		self = num = null;
+		// Preventing default event behaviour and 'Nullify' pattern
+		e.preventDefault();
+		self = num = lis = null;
 	}
 	/*
 	var url      = new Object(window.location.href);
