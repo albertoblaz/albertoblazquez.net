@@ -32,7 +32,7 @@
 				<figure class="logo">
 					<img src="img/logo.png" alt="Alberto Blázquez" />
 					
-					<h1 class="title">Alberto Blázquez</h1>
+					<!-- h1 class="title">Alberto Blázquez</h1 -->
 					
 					<figcaption class="purple about">
 						<p>Computer scientist born in Madrid </p>
@@ -41,62 +41,65 @@
 					</figcaption>
 				</figure>
 				<br>
+				<br>
 				
 				<nav class="menu">
 					<ul class="double block list">
 						<li class="nav-item blue">
 							<a href="#home"><strong>Home</strong></a>
 						</li>
-						<li class="nav-item violet">
+						<li class="nav-item lucid violet">
 							<a href="#cv"><strong>CV</strong></a>
 						</li>
-						<li class="nav-item red">
+						<li class="nav-item lucid red">
 							<a href="#projects"><strong>Projects</strong></a>
 						</li>
 						
 						<!--li class="item"><a href="#" class="white orange">Blog</a></li-->
 						
-						<li class="nav-item yellow">
+						<li class="nav-item lucid yellow">
 							<a href="#hobbies"><strong>Hobbies</strong></a>
 						</li>
-						<li class="nav-item green">
+						<li class="nav-item lucid green">
 							<a href="#contact"><strong>Contact</strong></a>
 						</li>
 					</ul>
 				</nav>
 				<br>
-				
+				<br>
+				<br>
+
 				<nav class="social">
 					<h3 class="headline sub inline">Social Links</h3>
 					
 					<ul class="single inline list">
-						<li class="item">
-							<a href="mailto:hola@albertoblazquez.net" class="favicon email"></a>
+						<li class="inline item">
+							<a target="_blank" href="mailto:hola@albertoblazquez.net" class="favicon email"></a>
 						</li>
 						
-						<li class="item">
-							<a href="https://twitter.com/albertoblaz" class="favicon twitter"></a>
+						<li class="inline item">
+							<a target="_blank" href="https://twitter.com/albertoblaz" class="favicon twitter"></a>
 						</li>
 						
-						<li class="item">
-							<a href="http://www.linkedin.com/in/albertoblaz" class="favicon linkedin"></a>
+						<li class="inline item">
+							<a target="_blank" href="http://www.linkedin.com/in/albertoblaz" class="favicon linkedin"></a>
 						</li>
 						
-						<li class="item">
-							<a href="https://github.com/albertoblaz" class="favicon github"></a>
+						<li class="inline item">
+							<a target="_blank" href="https://github.com/albertoblaz" class="favicon github"></a>
 						</li>
 						
-						<li class="item">
-							<a href="http://www.lastfm.es/user/LesPaul100" class="favicon lastfm"></a>
+						<li class="inline item">
+							<a target="_blank" href="http://www.lastfm.es/user/LesPaul100" class="favicon lastfm"></a>
 						</li>
 
 						<!-- li class="favicon filmaffinity">FilmAffinity</li -->
 					</ul>
 				</nav>
-
+				
 			</div>
 			
-			<!--
+			
 			<div class="colors">
 				<span class="square blue"></span>
 				<span class="square violet"></span>
@@ -104,15 +107,14 @@
 				<span class="square yellow"></span>
 				<span class="square green"></span>
 			</div>
-			-->
 			
 		</aside>
 		
 		
 		
-		<div class="content right eight columns">
+		<div class="container right eight columns">
 		
-			<section id="home" class="violet">
+			<section id="home" class="content violet">
 				<div>
 					<p>Computer scientist and software developer. Still a student of a master degree on software engineering</p>
 					<p>I'm 21 years old and I was born in Madrid, Spain, the city where I'm living currently</p>
@@ -166,9 +168,10 @@
 			</section>
 			
 			
-			<section id="cv" class="">
+			<section id="cv" class="content hidden">
+			<!-- section id="cv" -->
 			
-				<a href="assets/cv/CV_AlbertoBlazquez.pdf">
+				<a target="_blank" href="assets/cv/CV_AlbertoBlazquez.pdf">
 					<figure class="cv-pdf">
 						<img src="assets/cv/CV_AlbertoBlazquez.jpg" />
 					</figure>
@@ -177,36 +180,167 @@
 			</section>
 			
 			
-			<section id="projects" class="hidden">
+			<!-- section id="projects" class="hidden" -->
+			<section id="projects" class="content hidden">
 
 				<ul>
-					<li class="project">
-						<figure class="left">
-							<img src="img/project1.png" alt="" />
+				
+					<li id="v2-alberto-blazquez" class="project">
+						<figure class="left screenshot">
+							<a target="_blank" href="http://albertoblazquez.net">
+								<img src="img/projects/v2-alberto-blazquez.png" alt="Alberto Blázquez (v2)" />
+							</a>
 						</figure>
 						
-						<div class="right">
+						<div class="right profile">
 							<div>
-								<h3 class="headline sub left">Usability Planner</h3>
-								<datetime class="right">20th June, 2012</datetime>
+								<h3 class="left"><a target="_blank" href="http://albertoblazquez.net">Alberto Blázquez (v2)</a></h3>
+								<datetime class="right">20th August, 2012</datetime>
 								<div class="clear"></div>
 							</div>
 							
-							<p class="description"></p>
+							<p class="description">Web site co-developed with <a target="_blank" href="http://guillemandreu.com">Guillem Andreu</a> for the <em>CSSOff Design Contest</em> in 2012</p>
+							<p class="techs">HTML5, CSS3, jQuery</p>
 							
-							<!-- links -->
+							<div>
+								<p class="inline"><a target="_blank" href="http://github.com/albertoblaz/v2.albertoblazquez.net">Code</a></p>
+								<p class="inline"><a target="_blank" href="http://albertoblazquez.net">Link</a></p>
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+					</li>
+
+					<li id="usability-planner" class="project">
+						<figure class="left screenshot">
+							<a target="_blank" href="http://usabilityplanner.org">
+								<img src="img/projects/usability-planner.png" alt="Usability Planner v2" />
+							</a>
+						</figure>
+						
+						<div class="right profile">
+							<div>
+								<h3 class="left"><a target="_blank" href="http://usabilityplanner.org">Usability Planner</a></h3>
+								<datetime class="right">30th June, 2012</datetime>
+								<div class="clear"></div>
+							</div>
+							
+							<p class="description">Re-design of a web app to recommendate developers the best UX and Usability methods based on their projects constraints</p>
+							<p class="techs">HTML5, CSS3, JavaScript, Backbone, jQuery, PHP, XSLT, XML</p>
+							
+							<div>
+								<p class="inline"><a target="_blank" href="http://github.com/albertoblaz/usability-planner">Code</a></p>
+								<p class="inline"><a target="_blank" href="http://usabilityplanner.org">Link</a></p>
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+					</li>
+		
+					<li id="captacion-upm" class="project">
+						<figure class="left screenshot">
+							<a target="_blank" href="http://captacionupm.albertoblazquez.net">
+								<img src="img/projects/captacion-upm.png" alt="Captacion UPM" />
+							</a>
+						</figure>
+						
+						<div class="right profile">
+							<div>
+								<h3 class="left"><a target="_blank" href="http://captacionupm.albertoblazquez.net">Captacion UPM</a></h3>
+								<datetime class="right">22th February, 2012</datetime>
+								<div class="clear"></div>
+							</div>
+							
+							<p class="description">Web version of an iPad app made by two co-workers in the university to uptake future students in the <em>AULA 2012 Event</em></p>
+							<p class="techs">HTML5, CSS3, jQuery, PHP, XSLT, XML</p>
+							
+							<div>
+								<p class="inline"><a target="_blank" href="http://github.com/albertoblaz/captacion-upm">Code</a></p>
+								<p class="inline"><a target="_blank" href="http://captacionupm.albertoblazquez.net">Link</a></p>
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+					</li>
+		
+					<li id="cssoff-2012" class="project">
+						<figure class="left screenshot">
+							<a target="_blank" href="http://cssoff.albertoblazquez.net">
+								<img src="img/projects/cssoff.png" alt="CSSOff Contest 2012" />
+							</a>
+						</figure>
+						
+						<div class="right profile">
+							<div>
+								<h3 class="left"><a target="_blank" href="http://cssoff.albertoblazquez.net">CSSOff Contest 2012</a></h3>
+								<datetime class="right">12th January, 2012</datetime>
+								<div class="clear"></div>
+							</div>
+							
+							<p class="description">Web site co-developed with <a target="_blank" href="http://guillemandreu.com">Guillem Andreu</a> for the <em>CSSOff Design Contest</em> in 2012</p>
+							<p class="techs">HTML5, CSS3, jQuery</p>
+							
+							<div>
+								<p class="inline"><a target="_blank" href="http://github.com/albertoblaz/cssoff-2012">Code</a></p>
+								<p class="inline"><a target="_blank" href="http://cssoff.albertoblazquez.net">Link</a></p>
+							</div>
 						</div>
 						
 						<div class="clear"></div>
 					</li>
 					
-					<li class="project">
+					<li id="manuel-blazquez" class="project">
+						<figure class="left screenshot">
+							<a target="_blank" href="http://galeria.albertoblazquez.net">
+								<img src="img/projects/manuel-blazquez.png" alt="Manuel Blázquez" />
+							</a>
+						</figure>
 						
-					</li>
-					
-					<li class="project">
+						<div class="right profile">
+							<div>
+								<h3 class="left"><a target="_blank" href="http://galeria.albertoblazquez.net">Manuel Blázquez</a></h3>
+								<datetime class="right">23th November, 2011</datetime>
+								<div class="clear"></div>
+							</div>
+							
+							<p class="description">Web site co-developed with <a target="_blank" href="http://guillemandreu.com">Guillem Andreu</a> for the <em>CSSOff Design Contest</em> in 2012</p>
+							<p class="techs">HTML5, CSS3, jQuery</p>
+							
+							<div>
+								<p class="inline"><a target="_blank" href="http://github.com/albertoblaz/manuelblazquez.es">Code</a></p>
+								<p class="inline"><a target="_blank" href="http://galeria.albertoblazquez.net">Link</a></p>
+							</div>
+						</div>
 						
+						<div class="clear"></div>
 					</li>
+			
+					<li id="v1-alberto-blazquez" class="project">
+						<figure class="left screenshot">
+							<a target="_blank" href="http://v1.albertoblazquez.net">
+								<img src="img/projects/v1-alberto-blazquez.png" alt="Alberto Blázquez (v1)" />
+							</a>
+						</figure>
+						
+						<div class="right profile">
+							<div>
+								<h3 class="left"><a target="_blank" href="http://v1.albertoblazquez.net">Alberto Blázquez (v1)</a></h3>
+								<datetime class="right">25th August, 2011</datetime>
+								<div class="clear"></div>
+							</div>
+							
+							<p class="description">Web site co-developed with <a target="_blank" href="http://guillemandreu.com">Guillem Andreu</a> for the <em>CSSOff Design Contest</em> in 2012</p>
+							<p class="techs">HTML5, CSS3, jQuery</p>
+							
+							<div>
+								<p class="inline"><a target="_blank" href="http://github.com/albertoblaz/v1.albertoblazquez.net">Code</a></p>
+								<p class="inline"><a target="_blank" href="http://v1.albertoblazquez.net">Link</a></p>
+							</div>
+						</div>
+						
+						<div class="clear"></div>
+					</li>
+								
 				</ul>
 				
 			</section>
@@ -217,7 +351,7 @@
 			</section>
 			-->
 			
-			<section id="hobbies" class="hidden">
+			<section id="hobbies" class="content hidden">
 			
 				<ul>
 					<li class="hobbie">Music</li>
@@ -230,9 +364,12 @@
 			</section>
 			
 			
-			<section id="contact" class="hidden">
+			<section id="contact" class="content hidden">
 			
 				<div class="data">
+					<h3 class="headline sub">Personal Info</h3>
+					<br>
+					
 					<ul>
 						<li class="data-info">Email</li>
 						<li class="data-info">Follow</li>
@@ -240,12 +377,16 @@
 						<li class="data-info">Skype</li>
 					</ul>
 				</div>
+				<br>
+				
 				
 				<h3 class="headline sub">Get in touch!</h3>
+				<br>
 				
-				<form method="POST" action="php/contact.php">
-					<input type="text" placeholder="Name..." />
+				<form method="post" action="php/contact.php">
+					<input type="text"  placeholder="Name..." />
 					<input type="email" placeholder="Email..." />
+					<input type="text"  placeholder="Subject... (optional)" />
 					
 					<textarea></textarea>
 					
@@ -264,7 +405,8 @@
 
 
 	<!-- JavaScript -->
-	<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script-->
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="js/effects.js"></script>
 	<!--script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script-->
 
 </body>
