@@ -1,22 +1,27 @@
 
 $(document).on('ready', function() {
 
-	/* Global jQuery Objects */
-
-	var links    = $('#menu').find('.nav-item');
-	var contents = $('#container').find('.content');
-
-
 	/* Global Constants */
 
+	// CSS Classes
 	var HIDDEN   = 'hidden';
 	var ACTIVE   = 'active';
 	var DARK     = 'dark';
 	var COLORS   = [ 'blue', 'violet', 'red', 'yellow', 'green' ];
-	var SPEED    = 1000;
+	
+	// Speeds
+	var SCROLL_SPEED = 1000;
+	var ITEMS_SPEED  = SCROLL_SPEED / 2;
+
+
+	/* Global jQuery Objects */
+
+	var links       = $('#menu').find('.nav-item');
+	var contents    = $('#container').find('.content');
 
 
 	/* Animations */
+
 
 
 	/* Events Definition */
@@ -24,66 +29,39 @@ $(document).on('ready', function() {
 	var linksEvent = function(e) {
 
 		// Local jQuery vars
-		var self   = $(this);
-		var num    = self.prevAll().length;
-		var link   = self.find('a').attr('href');
-		var target = $(link);
+		var newItem   = $(this);
+		var newPos    = newItem.prevAll().length;
+		var target    = $( newItem.find('a').attr('href') );
+		var className = "";
 
-		// Showing just the correct '.content' section and the associated menu link
 
-		//$('body').stop().animate({ scrollTop : target.offset().top }, SPEED);
-		//contents.hide();
-		//target.show();
-		$('body').stop().animate({ scrollTop : target.offset().top - 50 }, SPEED);
-			/*
-			$.proxy(function() {
-				$('body').css({ scrollTop : this.offset().top });
-			}, target)
-			*/
-		//);
-		
-		links.each(function(i) {
-			var l = links.eq(i);
-			if ( l.hasClass(ACTIVE) ) {
-				l.animate({ width : '5em' }, SPEED/2);
-			}
+		// Performing the 'scroll' animation 
+		$('body').stop().animate({ scrollTop : target.offset().top - 50 }, SCROLL_SPEED);
+				
 
-			l.removeClass(COLORS[i]).removeClass(ACTIVE).addClass(DARK);
+		// Performing the animation to change the menu items styles and to highlight the selected one
+		var oldItem = links.siblings('.' + ACTIVE);
+		var oldPos  = oldItem.prevAll().length;
+
+		className = COLORS[oldPos] + " " + ACTIVE;
+		oldItem.removeClass(className, ITEMS_SPEED, function() {
+			return $(this).addClass(DARK);
 		});
 
-		self.animate({ width : '12em' }, SPEED/2);
-		self.addClass(COLORS[num]).addClass(ACTIVE).removeClass(DARK);
-		
-		// Preventing default event behaviour and 'Nullify' pattern
-		e.preventDefault();
-		self = num = link = target = null;
-	}
-	/*
-	var url      = new Object(window.location.href);
-	var links    = $('.menu').find('a');
-	var contents = $('.content');
-
+		className = COLORS[newPos] + " " + ACTIVE;
+		newItem.addClass(className, ITEMS_SPEED, function() {
+			return $(this).removeClass(DARK);
+		});
 	
-	var linksEvent = function(e) {
-		e.preventDefault();
-		
-		var self = $(this);
-		var href = self.attr('href');
-		var num  = self.parent().prevAll().length;
-		
-		if (href === '#home') {
-			window.location.href = url;
-		} else {
-			window.location.href = url + href;
-		}
-		
-		contents.addClass(HIDDEN);
-		contents.eq(num).removeClass(HIDDEN);
 
-		self = num = id = null;
+		// Preventing default event behaviour and using 'Nullify' pattern
+		e.preventDefault();
+		oldPos = newPos = className = oldItem = newItem = target = null;
 	}
-	*/
-	
+
+
+	/* Event Assignments */
+
 	links.on('click', linksEvent);
 
 });
