@@ -1,14 +1,15 @@
 
 /***  Colors  ***/
 
-datetime,
-h1, h2, h3, h4, h5, h6,
-.black  { color : #464646; }
-.white  { color : #EFEFEF; }
-
 a,
 .purple { color : #915BD3; }
 /* .purple { color : rgb(178, 161, 199); } */
+
+datetime,
+h1, h2, h3, h4, h5, h6,
+.black  { color : #464646; }
+/* .white  { color : #EFEFEF; } */
+.dark   { background-color : #2D2D2D; }
 
 .red    { background-color : #DA1E1F; }
 .violet { background-color : #662D91; }
@@ -29,6 +30,13 @@ a,
 .favicon.github   { background-image : url('../img/favicons/github.png');   }
 .favicon.lastfm   { background-image : url('../img/favicons/lastfm.png');   }
 .favicon.filmaffi { background-image : url('../img/favicons/filmaffi.png'); }
+
+.favicon.email:hover    { background-color : #61B832; }
+.favicon.twitter:hover  { background-color : #00A9C5; }
+.favicon.linkedin:hover { background-color : #0074B1; }
+.favicon.github:hover   { background-color : #662D91; }
+.favicon.lastfm:hover   { background-color : #DA1E1F; }
+.favicon.filmaffi:hover { background-color : #FFA403; }
 
 
 /***  Fonts  ***/
