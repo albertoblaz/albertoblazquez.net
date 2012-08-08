@@ -2,28 +2,44 @@
 /***  State Components  ***/
 
 .hidden    { display    : none;   }
+/*
 .visible   { display    : block;  }
 .invisible { visibility : hidden; }
+*/
 
-.nav-item {
-	/*
-	-webkit-transition : background .2s ease-out, padding .5s ease-in;
-	   -moz-transition : background .2s ease-out, padding .5s ease-in;
-	     -o-transition : background .2s ease-out, padding .5s ease-in;
-	        transition : background .2s ease-out, padding .5s ease-in;
-	*/
-	-webkit-transition : background .2s ease-out, padding .2s ease-in-out;
-	        transition : background .2s ease-out, padding .2s ease-in-out;
+.nav-item.active {
+	width : 12em;
 }
+
+
+
+/***  Pseudo-classes  ***/
 
 .nav-item:hover {
 	padding-left : 1.75em;
 }
 
-/*.nav-item a:hover {
-	margin-left : 0.6em;
-}*/
 
-.nav-item.active {
-	width : 12em;
+
+/***  Transitions  ***/
+
+.nav-item {
+	-webkit-transition : background .3s ease-in-out, padding .2s ease-in-out;
+	   -moz-transition : background .3s ease-in-out, padding .2s ease-in-out;
+	     -o-transition : background .3s ease-in-out, padding .2s ease-in-out;
+	        transition : background .3s ease-in-out, padding .2s ease-in-out;
+}
+
+.favicon {
+    -webkit-transition : background .2s ease-in-out;
+	   -moz-transition : background .2s ease-in-out;
+	     -o-transition : background .2s ease-in-out;
+	        transition : background .2s ease-in-out;
+}
+
+.project a {
+	-webkit-transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
+	   -moz-transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
+	     -o-transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
+	        transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
 }
