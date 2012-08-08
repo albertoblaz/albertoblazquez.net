@@ -1,36 +1,15 @@
 
 /***  Main Layout Components  ***/
-/*
-.wrapper { 
-	height : 100%;
-	width  : 100%;
-}
 
-.sidebar { 
-	height : 100%;
-	width  : 30%;
-}
-
-.container { 
-	height : 100%;
-	width  : 70%;
-}
-*/
-
-.sidebar { 
-	height   : 100%;
+#sidebar {
 	position : relative;
+	height   : 100%;
 }
 
-.inner {
-	margin : auto;
-	padding-top : 10%;
-	height : 100%;
-	width  : 80%;
-}
-
-.container {
-	padding : 2em 0.5em;
+#container {
+	/* overflow : hidden; */
+	padding  : 2em 0.5em;
+	height   : 100%;
 }
 
 
