@@ -17,7 +17,18 @@ h1, h2, h3, h4, h5, h6,
 .green  { background-color : #61B832; }
 .yellow { background-color : #FFA403; }
 
+/*
 .lucid  { opacity : 0.65; filter : alpha(opacity=65); }
+*/
+
+.project a:hover {
+    background-color : #915BD3;
+    color            : #EFEFEF;
+}
+
+.screenshot a       { padding : 0; }
+.screenshot a:hover { background-color : #915BD3; }
+
 
 
 /***  Favicons Thumbnails  ***/
@@ -31,26 +42,16 @@ h1, h2, h3, h4, h5, h6,
 .favicon.lastfm   { background-image : url('../img/favicons/lastfm.png');   }
 .favicon.filmaffi { background-image : url('../img/favicons/filmaffi.png'); }
 
-.favicon.email:hover    { background-color : #61B832; }
-.favicon.twitter:hover  { background-color : #00A9C5; }
-.favicon.linkedin:hover { background-color : #0074B1; }
-.favicon.github:hover   { background-color : #662D91; }
-.favicon.lastfm:hover   { background-color : #DA1E1F; }
-.favicon.filmaffi:hover { background-color : #FFA403; }
+.favicon.email:hover,    .favicon.email:active    { background-color : #61B832; }
+.favicon.twitter:hover,  .favicon.twitter:active  { background-color : #00A9C5; }
+.favicon.linkedin:hover, .favicon.linkedin:active { background-color : #0074B1; }
+.favicon.github:hover,   .favicon.github:active   { background-color : #662D91; }
+.favicon.lastfm:hover,   .favicon.lastfm:active   { background-color : #DA1E1F; }
+.favicon.filmaffi:hover  .favicon.filmaffi:active { background-color : #FFA403; }
+
 
 
 /***  Fonts  ***/
-
-body {
-	font-family : 'Calibri', 'Helvetica', sans-serif;
-	font-size   : 16px;
-}
-
-.nav-item { font-size : 19px; }
-
-.title {
-	font-family : 'Museo300';
-}
 
 @font-face {
     font-family: 'Museo300';
@@ -62,3 +63,10 @@ body {
     font-weight: 300;
     font-style: normal;
 }
+
+body {
+	font-family : 'Calibri', 'Helvetica', sans-serif;
+	font-size   : 1em;
+}
+
+.nav-item { font-size : 1.2em; }
