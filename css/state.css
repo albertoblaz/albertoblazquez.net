@@ -1,7 +1,29 @@
 
 /***  State Components  ***/
 
-.hidden  { display : none;  }
-.visible { display : block; }
+.hidden    { display    : none;   }
+.visible   { display    : block;  }
+.invisible { visibility : hidden; }
 
-.tab.active {}
+.nav-item {
+	/*
+	-webkit-transition : background .2s ease-out, padding .5s ease-in;
+	   -moz-transition : background .2s ease-out, padding .5s ease-in;
+	     -o-transition : background .2s ease-out, padding .5s ease-in;
+	        transition : background .2s ease-out, padding .5s ease-in;
+	*/
+	-webkit-transition : background .2s ease-out, padding .2s ease-in-out;
+	        transition : background .2s ease-out, padding .2s ease-in-out;
+}
+
+.nav-item:hover {
+	padding-left : 1.75em;
+}
+
+/*.nav-item a:hover {
+	margin-left : 0.6em;
+}*/
+
+.nav-item.active {
+	width : 12em;
+}
