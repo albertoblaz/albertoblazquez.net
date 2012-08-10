@@ -1,15 +1,15 @@
 
 /***  Colors  ***/
 
-a,
+/* Custom classes */
+
 .purple { color : #915BD3; }
 /* .purple { color : rgb(178, 161, 199); } */
-
-datetime,
-h1, h2, h3, h4, h5, h6,
-.black  { color : #464646; }
+/* .black  { color : #464646; } */
 /* .white  { color : #EFEFEF; } */
-.dark   { background-color : #2D2D2D; }
+
+/* .dark, */
+.nav-item { background-color : #2D2D2D; }
 
 .red    { background-color : #DA1E1F; }
 .violet { background-color : #662D91; }
@@ -17,10 +17,29 @@ h1, h2, h3, h4, h5, h6,
 .green  { background-color : #61B832; }
 .yellow { background-color : #FFA403; }
 
+
+/* Other elements */
+
+body     { background : #DEDEDE; }
+#wrapper { background : white;   }
+
+input, textarea { 
+    background   : white;
+    border-color : rgba(145, 91, 211, 0.45);
+}
+
+datetime,
+h1, h2, h3, h4, h5, h6 {
+    color : #464646;   
+}
+
 /*
 .lucid  { opacity : 0.65; filter : alpha(opacity=65); }
 */
 
+#menu a { color : #EFEFEF; }
+
+.project a { color : #915BD3; }
 .project a:hover {
     background-color : #915BD3;
     color            : #EFEFEF;
@@ -30,6 +49,30 @@ h1, h2, h3, h4, h5, h6,
 .screenshot a:hover { background-color : #915BD3; }
 
 
+
+/***  Fonts  ***/
+
+@font-face {
+    font-family : 'Museo300';
+    font-style  : normal;
+    font-weight : 300;
+    src: url ('../fonts/museo300-regular-webfont.eot');
+    src: url ('../fonts/museo300-regular-webfont.eot?#iefix')          format('embedded-opentype'),
+         url ('../fonts/museo300-regular-webfont.woff')                format('woff'),
+         url ('../fonts/museo300-regular-webfont.ttf')                 format('truetype'),
+         url ('../fonts/museo300-regular-webfont.svg#Museo300Regular') format('svg');
+}
+
+body {
+    font-family : 'Calibri', 'Helvetica', sans-serif;
+    font-size   : 1em;
+}
+
+time { font-size : 0.8em; }
+
+i { font-style : normal; }
+
+.nav-item { font-size : 1.2em; }
 
 /***  Favicons Thumbnails  ***/
 
@@ -47,26 +90,45 @@ h1, h2, h3, h4, h5, h6,
 .favicon.linkedin:hover, .favicon.linkedin:active { background-color : #0074B1; }
 .favicon.github:hover,   .favicon.github:active   { background-color : #662D91; }
 .favicon.lastfm:hover,   .favicon.lastfm:active   { background-color : #DA1E1F; }
-.favicon.filmaffi:hover  .favicon.filmaffi:active { background-color : #FFA403; }
+.favicon.filmaffi:hover, .favicon.filmaffi:active { background-color : #FFA403; }
 
 
 
-/***  Fonts  ***/
+/***  Scrollbars  ***/
 
-@font-face {
-    font-family: 'Museo300';
-    src: url('../fonts/museo300-regular-webfont.eot');
-    src: url('../fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/museo300-regular-webfont.woff') format('woff'),
-         url('../fonts/museo300-regular-webfont.ttf') format('truetype'),
-         url('../fonts/museo300-regular-webfont.svg#Museo300Regular') format('svg');
-    font-weight: 300;
-    font-style: normal;
+::-webkit-scrollbar {
+    background : rgb(241, 241, 241);
+    opacity    : 0.3;
+    width      : 0.4375em;
 }
 
-body {
-	font-family : 'Calibri', 'Helvetica', sans-serif;
-	font-size   : 1em;
+::-webkit-scrollbar-track {
+    border-radius : 0.4375em;
 }
 
-.nav-item { font-size : 1.2em; }
+::-webkit-scrollbar-thumb {
+    border-radius : 0.4375em;
+    background : rgb(179, 179, 179);
+}
+
+
+
+/***  Placeholders  ***/
+
+::-webkit-input-placeholder {
+    color: rgba(70, 70, 70, 0.7);
+}
+
+::-moz-placeholder {
+    color: rgba(70, 70, 70, 0.7);
+}
+
+/*
+:hover::-webkit-input-placeholder {
+    color : blue;
+}
+
+:hover:-moz-placeholder {
+    color : blue;
+}
+*/
