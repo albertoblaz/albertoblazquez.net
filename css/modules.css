@@ -1,7 +1,7 @@
 
 /***  Sidebar  ***/
 
-.colors { height : 2.75em; }
+#colors { height : 2.75em; }
 
 	.square {
 		display : block;
@@ -24,16 +24,14 @@
 */
 
 	.nav-item  {
-		cursor        : pointer;
 		border-radius : 5px;
 		line-height   : 1.5em;
 		margin-bottom : 0.1em;
-		padding-left  : 1em;
-		width         : 5em;
+		width         : 6em;
 	}
-
-	.nav-item a { color : #EFEFEF; }
 	
+	.nav-item i { padding-left : 1em; }
+
 	.favicon {
 		border-radius : 4px;
 		display : inline-block;
@@ -109,6 +107,11 @@
 	margin-bottom : 3.125em;
 }
 
+	.project a {
+		border-radius : 5px;
+		padding : 2px;
+	}
+	
 	.screenshot {
 		border : 1px solid #DEDEDE;
 		border-radius : 5px;
