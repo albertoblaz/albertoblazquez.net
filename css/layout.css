@@ -1,17 +1,44 @@
 
 /***  Main Layout Components  ***/
 
-#sidebar {
-	position : relative;
-	height   : 100%;
+#wrapper {
+	border : 1px solid rgba(102, 45, 145, 0.45);
+	border-radius: 4px;
+	margin : 1.25%;
+	height : 100%;
+
+	-webkit-box-shadow : 0px 0px 20px 1px #A2A2A2;
+	   -moz-box-shadow : 0px 0px 20px 1px #A2A2A2;
+	        box-shadow : 0px 0px 20px 1px #A2A2A2;
 }
 
-#container {
-	/* overflow : hidden; */
-	padding  : 2em 0.5em;
-	height   : 100%;
-}
+	#wrap {
+		height   : 100%;
+	}
 
+		#sidebar {
+			position : relative;
+			height   : 100%;
+		}
+
+		#container {
+			margin   : 2em 0.5em;
+			margin-bottom : 4em;
+			height   : 95%;
+			overflow : hidden;
+		}
+
+			.content {
+				margin-bottom : 2em;
+				padding-right : 1em;
+				height   : 95%;
+				overflow : auto;
+			}
+
+				#home { 
+					background-color : rgba(90, 0, 215, 0.2);
+					border-radius    : 4px;
+				}
 
 /***  Columns  ***/
 
