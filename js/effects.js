@@ -1,13 +1,43 @@
 
-$(document).on('ready', function() {
+(function ( $ ) {
+
+	$(document).on('ready', function() {
+
+		/* Event Assignments */
+		links.on('click', linksEvent);
+		squares.on('click', squaresEvent);
+
+
+		/* Scrolling self-executed function */
+		(function() {
+
+		/*
+			// Scroll initially if there's a hash (#something) in the url 
+			$.localScroll.hash({
+				duration : 1500,
+				queue    : true,
+				target   : '#container'
+			});
+		*/
+		
+			// The 'scrolling' effect
+			$.localScroll({
+				duration : 1000,
+				hash     : false,
+				queue    : true,
+				target   : '#container'
+			});
+
+		})();
+
+	});
+
 
 	/* Global Constants */
 
 	// CSS Classes
-	var HIDDEN   = 'hidden';
-	var ACTIVE   = 'active';
-	var DARK     = 'dark';
-	var COLORS   = [ 'blue', 'violet', 'red', 'yellow', 'green' ];
+	var ACTIVE = 'active';
+	var COLORS = [ 'blue', 'violet', 'red', 'yellow', 'green' ];
 	
 	// Speeds
 	var SCROLL_SPEED = 1000;
@@ -16,52 +46,50 @@ $(document).on('ready', function() {
 
 	/* Global jQuery Objects */
 
-	var links       = $('#menu').find('.nav-item');
-	var contents    = $('#container').find('.content');
-
-
-	/* Animations */
-
+	var squares  = $('#colors').find('.square');
+	var links    = $('#menu').find('a');
+	var oldItem  = links.first();
 
 
 	/* Events Definition */
 
-	var linksEvent = function(e) {
+	var linksEvent = function( e ) {
 
 		// Local jQuery vars
 		var newItem   = $(this);
 		var newPos    = newItem.prevAll().length;
-		var target    = $( newItem.find('a').attr('href') );
-		var className = "";
+		var target    = $( newItem.attr('href') );
+		
+		var className = ACTIVE;
 
-
-		// Performing the 'scroll' animation 
-		$('body').stop().animate({ scrollTop : target.offset().top - 50 }, SCROLL_SPEED);
-				
 
 		// Performing the animation to change the menu items styles and to highlight the selected one
-		var oldItem = links.siblings('.' + ACTIVE);
-		var oldPos  = oldItem.prevAll().length;
+		var oldPos = oldItem.prevAll().length;
+		if ( oldPos !== newPos ) {
+			className = COLORS[oldPos] + " " + ACTIVE;
+		}
 
-		className = COLORS[oldPos] + " " + ACTIVE;
-		oldItem.removeClass(className, ITEMS_SPEED, function() {
-			return $(this).addClass(DARK);
-		});
+		oldItem.children().removeClass(className, ITEMS_SPEED);
 
-		className = COLORS[newPos] + " " + ACTIVE;
-		newItem.addClass(className, ITEMS_SPEED, function() {
-			return $(this).removeClass(DARK);
-		});
-	
+		newItem.children()
+			.addClass(COLORS[newPos])
+			.addClass(ACTIVE, ITEMS_SPEED);
+
+
+		// Updating the current active item
+		oldItem = newItem;
+
 
 		// Preventing default event behaviour and using 'Nullify' pattern
 		e.preventDefault();
-		oldPos = newPos = className = oldItem = newItem = target = null;
-	}
+		oldPos = newPos = className = newItem = target = null;
+	};
 
 
-	/* Event Assignments */
+	var squaresEvent = function( e ) {
+		var pos  = $(this).prevAll().length;
+		links.eq(pos).trigger('click');
+	};
 
-	links.on('click', linksEvent);
 
-});
+})( jQuery );
