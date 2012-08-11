@@ -1,4 +1,5 @@
-﻿<html lang="en">
+﻿<!Doctype html ->
+<html lang="en">
 <!-- html lang="en" manifest="offline.appcache" -->
 
 <head>
@@ -10,7 +11,7 @@
 
 	<meta name="keywords"    content="Alberto, Blazquez, Blázquez, computer, science, scientist, software, engineer, developer" />
 	<meta name="description" content="Website of Alberto Blázquez, computer scientist, software engineer and developer" />
-	<meta name="robots"      content="index,follow" />
+	<meta name="robots"      content="index, follow" />
 
 	<meta property="og:type"        content="website" />
 	<meta property="og:title"       content="Alberto Blazquez Website" />
@@ -23,6 +24,13 @@
 
 	<!-- CSS -->
 	<link type="text/css" rel="stylesheet" media="all" href="css/styles.css" />
+
+	<!-- JavaScript to provide an HTML5 Fallback in legacy browsers (motherfucking IE) -->
+	<script type="text/javascript" src="js/lib/html5shiv.min.js"></script>
+
+	<noscript>
+		If you are reading this text is because your web browser does not allow JavaScript. In that case, the website will not be viewed perfect so please, try to enable it or just change to a better browser.
+	</noscript>
 
 </head>
 
@@ -51,8 +59,6 @@
 					<figure class="logo">
 						<img src="img/logo.png" alt="Alberto Blázquez" />
 						
-						<!-- h1 class="title">Alberto Blázquez</h1 -->
-						
 						<figcaption class="purple about">
 							<p>Computer scientist born in Madrid</p>
 							<p>Technology enthusiast and autodidactic</p>
@@ -63,11 +69,12 @@
 					<br>
 
 					
-					<nav id="menu" class="list">
+					<nav id="menu" class="single tabbed">
 						<a href="#home"><div class="nav-item active blue"><i>Home</i></div></a>
 						<a href="#cv"><div class="nav-item"><i>CV</i></div></a>
 						<a href="#projects"><div class="nav-item"><i>Projects</i></div></a>
-						<a href="#hobbies"><div class="nav-item"><i>Hobbies</i></div></a>
+						<!-- <a href="#hobbies"><div class="nav-item"><i>Hobbies</i></div></a> -->
+						<a href="#books"><div class="nav-item"><i>Books</i></div></a>
 						<a href="#contact"><div class="nav-item"><i>Contact</i></div></a>
 					</nav>
 					<br>
@@ -75,14 +82,14 @@
 					<br>
 
 
-					<nav class="social">
-						<h3 class="list">Social Links</h3>
+					<nav id="social" class="single tabbed">
+						<h3>Social Links</h3>
 						<br>
 						
-						<ul class="list">
-							<li class="inline item">
+						<ul>
+							<!--li class="inline item">
 								<a target="_blank" title="Email" href="mailto:hola@albertoblazquez.net" class="favicon email"></a>
-							</li>
+							</li-->
 							
 							<li class="inline item">
 								<a target="_blank" title="Twitter" href="https://twitter.com/albertoblaz" class="favicon twitter"></a>
@@ -93,16 +100,17 @@
 							</li>
 							
 							<li class="inline item">
-								<a target="_blank" title="GitHub" href="https://github.com/albertoblaz" class="favicon github"></a>
-							</li>
-							
-							<li class="inline item">
 								<a target="_blank" title="Last.FM" href="http://www.lastfm.es/user/LesPaul100" class="favicon lastfm"></a>
 							</li>
 
 							<li class="inline item">
 								<a target="_blank" title="FilmAffinity" href="http://www.filmaffinity.com/es/userratings.php?user_id=835985&orderby=0" class="favicon filmaffi"></a>
 							</li>
+
+							<li class="inline item">
+								<a target="_blank" title="GitHub" href="https://github.com/albertoblaz" class="favicon github"></a>
+							</li>
+
 						</ul>
 					</nav>
 
@@ -116,6 +124,18 @@
 
 				<section id="home" class="content">
 
+					<figure>
+						<img class="cover" src="img/home/cover.png" />
+
+						<figcaption>
+							<hgroup class="title">
+								<h1 class="white">Alberto Blázquez</h1>
+								<h2 class="white">Computer Scientist, Software Engineer and Web Developer</h2>
+							</hgroup>
+						</figcaption>
+					</figure>
+
+				<!--
 					<div>
 						<p>Computer scientist and software developer. Still a student of a master degree on software engineering</p>
 						<p>I'm 21 years old and I was born in Madrid, Spain, the city where I'm living currently</p>
@@ -141,6 +161,7 @@
 							<div class="clear"></div>
 						</div>
 					</div>
+				-->
 				</section>
 				
 				
@@ -156,7 +177,7 @@
 				
 				
 				<section id="projects" class="content">
-			
+
 					<article id="v2-alberto-blazquez" class="project">
 						<figure class="left screenshot">
 							<a target="_blank" href="http://albertoblazquez.net">
@@ -330,7 +351,7 @@
 								<div class="clear"></div>
 							</div>
 							
-							<p class="description">The first version of my personal website using a Wordpress theme and doing little changes and to learn a bit of web design</p>
+							<p class="description">The first version of my personal website using a Wordpress theme and doing little changes to learn a bit of web design</p>
 							<p class="techs">HTML4, CSS2, Wordpress</p>
 							
 							<div>
@@ -343,53 +364,140 @@
 					</article>
 
 				</section>
-				
+
 				<!--
-				<section id="blog" class="hidden">
+				<section id="hobbies" class="content">
+
+					<ul>
+						<li class="left double tabbed"><h3>Music</h3></li>
+						<li class="left double tabbed"><h3>Cinema</h3></li>
+						<li class="left double tabbed"><h3>Series</h3></li>
+						<li class="left double tabbed"><h3>Books</h3></li>
+						<li class="left double tabbed"><h3>Sports</h3></li>
+						<li class="clear"></li>
+					</ul>
+					
+					<div>
+
+					</div>
 
 				</section>
 				-->
 				
-				<section id="hobbies" class="content">
-				
-					<ul>
-						<li class="hobbie">Music</li>
-						<li class="hobbie">Cinema</li>
-						<li class="hobbie">Series</li>
-						<li class="hobbie">Books</li>
-						<li class="hobbie">Sports</li>
-					</ul>
-					
+				<section id="books" class="content">
+
+					<article class="collection">
+						<h3>Software Engineering</h3>
+						<br>
+
+						<ul>
+							<li class="book"><img src="img/books/se/design-patterns.png" alt="Design Patterns"/></li>
+						</ul>
+					</article>
+
+					<article class="collection">
+						<h3>Object-Oriented and Functional Programming</h3>
+						<br>
+
+						<ul>
+							<li class="book"><img src="img/books/prog/csharp.jpg"    alt="Learning C#"/></li>
+							<li class="book"><img src="img/books/prog/haskell.jpg"   alt="Real World Haskell"/></li>
+							<li class="book"><img src="img/books/prog/php-mysql.jpg" alt="PHP and MySQL"/></li>
+							<li class="book"><img src="img/books/prog/python.jpg"    alt="Learning Python"/></li>
+							<li class="book"><img src="img/books/prog/ruby.jpg"      alt="The Ruby Programming Langauge"/></li>
+						</ul>
+					</article>
+
+					<article class="collection">
+						<h3>Web Development and Design</h3>
+						<br>
+
+						<ul>
+							<li class="book"><img src="img/books/web/javascript.jpg" alt="JavaScript: The Good Parts"/></li>
+							<li class="book"><img src="img/books/web/rwd.jpg"        alt="Responsive Web Design"/></li>
+							<li class="book"><img src="img/books/web/smacss.png"     alt="Scalable and Modular Architecture for CSS"/></li>
+						</ul>
+					</article>
+
+					<article class="collection">
+						<h3>Human-Computer Interaction and Usability</h3>
+						<br>
+
+						<ul>
+							<li class="book"><img src="img/books/hci/design-everyday-things.jpg" alt="The Design of Everyday Things"/></li>
+						</ul>
+					</article>
+
 				</section>
-				
-				
+
+
 				<section id="contact" class="content">
 				
 					<div class="data">
-						<h3 class="headline sub">Personal Info</h3>
+						
+						<div class="half left">
+							<h3 class="headline sub">Personal Info</h3>
+
+							<div>
+								<span class="icon email"></span>
+								<a target="_blank" href="mailto:hola@albertoblazquez.net">hola@albertoblazquez.net</a>
+								<div class="clear"></div>
+							</div>
+
+							<div>
+								<span class="icon phone"></span>
+								<a href="callto:0034618772481">0034 618 77 24 81</a>
+								<div class="clear"></div>
+							</div>
+
+							<div>
+								<span class="icon skype"></span>
+								<a href="callto://albertoblaz">albertoblaz</a>
+								<div class="clear"></div>
+							</div>
+
+						</div>
+
+
+						<div class="half left">
+							<h3 class="headline sub">Online Presence</h3>
+
+							<div>
+								<span class="icon twitter"></span>
+								<a target="_blank" href="https://twitter.com/albertoblaz">@albertoblaz</a>
+								<div class="clear"></div>
+							</div>
+
+							<div>
+								<span class="icon linkedin"></span>
+								<a target="_blank" href="http://www.linkedin.com/in/albertoblaz">LinkedIn account</a>
+								<div class="clear"></div>
+							</div>
+
+							<div>
+								<span class="icon github"></span>
+								<a target="_blank" href="https://github.com/albertoblaz">GitHub profile</a>
+								<div class="clear"></div>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+
+
+					<div class="touch">
+						<h3 class="headline sub">Get in touch!</h3>
 						<br>
 						
-						<ul>
-							<li class="data-info">Email</li>
-							<li class="data-info">Follow</li>
-							<li class="data-info">Phone</li>
-							<li class="data-info">Skype</li>
-						</ul>
+						<form method="post" action="php/contact.php">
+							<input type="text"  name="name"  class="half" placeholder="Name..." />
+							<input type="email" name="email" class="half" placeholder="Email..." />
+							
+							<textarea name="msg" placeholder="Write the message here..."></textarea>
+							<input id="submit" type="submit" value="Send Mail" />
+						</form>
 					</div>
-					<br>
-					
-					
-					<h3 class="headline sub">Get in touch!</h3>
-					<br>
-					
-					<form method="post" action="php/contact.php">
-						<input type="text"  name="name"    placeholder="Name..." />
-						<input type="email" name="email"   placeholder="Email..." />
-						
-						<textarea name="msg" placeholder="Write the message here..."></textarea>
-						<input type="submit" value="Send Mail" />
-					</form>
-					
+
 				</section>
 
 			</div>
@@ -409,8 +517,6 @@
 	<script type="text/javascript" src="js/lib/jquery-ui-1.8.22.custom.min.js"></script>
 
 	<script type="text/javascript" src="js/lib/plugins/jquery.scroll.min.js"></script>
-
-	<script type="text/javascript" src="js/lib/html5.js"></script>
 	
 	<!--
 	<script async type="text/javascript">
