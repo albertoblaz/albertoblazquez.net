@@ -1,12 +1,6 @@
 
 /***  State Components  ***/
 
-.hidden    { display    : none;   }
-/*
-.visible   { display    : block;  }
-.invisible { visibility : hidden; }
-*/
-
 .nav-item.active {
 	width : 12em;
 }
@@ -17,7 +11,8 @@
 
 .nav-item:hover { padding-left : 1.75em; }
 
-.square:hover { padding-bottom : 1em; }
+.square:hover { padding-bottom : 1.25em; }
+
 
 
 /***  Transitions  ***/
@@ -36,6 +31,7 @@
 	        transition : background .2s ease-in-out;
 }
 
+.data a,
 .project a {
 	-webkit-transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
 	   -moz-transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
