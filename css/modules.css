@@ -77,14 +77,22 @@
 	margin : 0;
 }
 
-.skill { padding-bottom : 1.5em; }
-
 .button {
-	border-radius: 5px;
-	padding: 0.5em;
-	width: 9em;
-	text-align: center;
+	border-radius : 5px;
+
+	cursor     : pointer;
+	text-align : center;
+
+	padding : 0.5em;
+	width   : 9em;
 }
+
+.skill {
+	padding-bottom : 1em;
+	height : 4em;
+}
+
+	.cv-icon { height : inherit; }
 
 
 
@@ -95,20 +103,18 @@
 }
 	
 	.screenshot img {
-		border : 1px solid #DEDEDE;
+		border        : 1px solid #DEDEDE;
 		border-radius : 5px;
-
+        box-shadow    : 2px 5px 10px 1px #CCC;
 		width  : 100%;
+	}
 
-		-webkit-box-shadow : 2px 5px 10px 1px #CCC;
-		   -moz-box-shadow : 2px 5px 10px 1px #CCC;
-		     -o-box-shadow : 2px 5px 10px 1px #CCC;
-		        box-shadow : 2px 5px 10px 1px #CCC;
+	.date {
+		margin : 0;
+		padding-top : 0.4em;
 	}
 
 	.techs { margin-bottom : 0.5em; }
-
-	time { padding-top : 0.4em; }
 
 
 
@@ -138,22 +144,12 @@
 	padding-left  : 10px
 }
 
-.data {
-	margin-bottom : 1em;
-	height : 12em;
-}
+.data { margin-bottom: 2.6em; }
 
 	.data a   { margin-top : 8px;  }
 	#linkedin { margin-top : 12px; }	/* LinkedIn Fixed! */
 
-	.half {
-		margin-right : 1%;
-		height : 2em;
-		width  : 41.25%;
+	.icon {
+		height  : 40px;
+		width   : 50px;
 	}
-
-		.icon {
-			display : inline-block;
-			height  : 40px;
-			width   : 50px;
-		}

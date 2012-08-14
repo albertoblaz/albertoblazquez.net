@@ -51,20 +51,23 @@ input, textarea {
 	border  : 1px solid #DDD;
 	border-radius : 4px;
 
-	outline : 0 none;
 	padding : 0.4em 0.8em;
+	outline : 0 none;
+
+	width : 100%;
 }
 
+/*
 input[type="submit"] {
 	cursor : pointer;
 	height : 2.5em;
 	width  : 12em;
 }
+*/
 
 textarea {
-	margin : 2% 0;
-	height : 35%;
-	width  : 84%;
+	margin : 1.5em 0;
+	height : 12em;
 }
 
 

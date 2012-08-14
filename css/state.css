@@ -1,6 +1,8 @@
 
 /***  State Components  ***/
 
+.hidden { display : none; }
+
 .transition {
 	border-radius : 5px;
 	margin-left   : -2px;
@@ -53,17 +55,17 @@
 
 /***  URL Icons  ***/
 
-.skill          { background : no-repeat right center;  }
+.cv-icon        { background : no-repeat center top;  }
 .icon, .favicon { background : no-repeat center center; }
 
 
 /* CV Icons */
 
-.skill.hci { background-image : url('../img/cv/hci.jpg'); }
-.skill.ofp { background-image : url('../img/cv/ofp.jpg'); }
-.skill.web { background-image : url('../img/cv/web.jpg'); }
-.skill.mad { background-image : url('../img/cv/mad.jpg'); }
-.skill.sad { background-image : url('../img/cv/sad.jpg'); }
+.cv-icon.hci { background-image : url('../img/cv/hci.jpg'); }
+.cv-icon.ofp { background-image : url('../img/cv/ofp.jpg'); }
+.cv-icon.web { background-image : url('../img/cv/web.jpg'); }
+.cv-icon.mad { background-image : url('../img/cv/mad.jpg'); }
+.cv-icon.sad { background-image : url('../img/cv/sad.jpg'); }
 
 
 /* Contact Icons */
