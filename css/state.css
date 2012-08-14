@@ -1,28 +1,20 @@
 
 /***  State Components  ***/
 
-.nav-item.active {
-	width : 12em;
+.transition {
+	border-radius : 5px;
+	margin-left   : -2px;
+	padding       : 2px;
+	z-index       : 10;
 }
 
-
-
-/***  Pseudo-classes  ***/
-
-.nav-item:hover { padding-left : 1.75em; }
-
-.square:hover { padding-bottom : 1.25em; }
+.nav-item.active {
+	width : 11em;
+}
 
 
 
 /***  Transitions  ***/
-
-.nav-item {
-	-webkit-transition : background .3s ease-in-out, padding .2s ease-in-out;
-	   -moz-transition : background .3s ease-in-out, padding .2s ease-in-out;
-	     -o-transition : background .3s ease-in-out, padding .2s ease-in-out;
-	        transition : background .3s ease-in-out, padding .2s ease-in-out;
-}
 
 .favicon {
     -webkit-transition : background .2s ease-in-out;
@@ -31,13 +23,22 @@
 	        transition : background .2s ease-in-out;
 }
 
-.data a,
-.project a {
-	-webkit-transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
-	   -moz-transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
-	     -o-transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
-	        transition : background .3s ease-in, color .3s ease-in-out, border .2s ease-in-out;
+.transition {
+	-webkit-transition : background .3s ease-in, color .2s ease-in-out;
+	   -moz-transition : background .3s ease-in, color .2s ease-in-out;
+	     -o-transition : background .3s ease-in, color .2s ease-in-out;
+	        transition : background .3s ease-in, color .2s ease-in-out;
 }
+
+.nav-item {
+	-webkit-transition : background .3s ease-in-out, padding .2s ease-in-out;
+	   -moz-transition : background .3s ease-in-out, padding .2s ease-in-out;
+	     -o-transition : background .3s ease-in-out, padding .2s ease-in-out;
+	        transition : background .3s ease-in-out, padding .2s ease-in-out;
+}
+
+	.nav-item:hover { padding-left : 1.75em; }
+
 
 .square {
 	-webkit-transition : padding .2s ease-in-out;
@@ -45,3 +46,40 @@
 	     -o-transition : padding .2s ease-in-out;
 	        transition : padding .2s ease-in-out;
 }
+
+	.square:hover { padding-bottom : 1.25em; }
+
+
+
+/***  URL Icons  ***/
+
+.skill          { background : no-repeat right center;  }
+.icon, .favicon { background : no-repeat center center; }
+
+
+/* CV Icons */
+
+.skill.hci { background-image : url('../img/cv/hci.jpg'); }
+.skill.ofp { background-image : url('../img/cv/ofp.jpg'); }
+.skill.web { background-image : url('../img/cv/web.jpg'); }
+.skill.mad { background-image : url('../img/cv/mad.jpg'); }
+.skill.sad { background-image : url('../img/cv/sad.jpg'); }
+
+
+/* Contact Icons */
+
+.icon.email    { background-image : url('../img/contact/email.png');    }
+.icon.phone    { background-image : url('../img/contact/phone.png');    }
+.icon.skype    { background-image : url('../img/contact/skype.png');    }
+.icon.twitter  { background-image : url('../img/contact/twitter.png');  }
+.icon.linkedin { background-image : url('../img/contact/linkedin.png'); }
+.icon.github   { background-image : url('../img/contact/github.png');   }
+
+
+/* Sidebar Favicons */
+
+.favicon.twitter  { background-image : url('../img/favicons/twitter.png');  }
+.favicon.linkedin { background-image : url('../img/favicons/linkedin.png'); }
+.favicon.github   { background-image : url('../img/favicons/github.png');   }
+.favicon.lastfm   { background-image : url('../img/favicons/lastfm.png');   }
+.favicon.filmaffi { background-image : url('../img/favicons/filmaffi.png'); }

@@ -24,7 +24,6 @@ a:visited {
 	text-decoration : none;
 }
 
-datetime,
 h1, h2, h3, h4, h5, h6 {
 	font-weight : normal;
 	margin : 0;
@@ -36,8 +35,7 @@ ol, ul {
 	padding    : 0;
 }
 
-img,
-figure { 
+img, figure { 
 	border  : 0;
 	margin  : 0;
 	outline : 0;
@@ -58,14 +56,9 @@ input, textarea {
 }
 
 input[type="submit"] {
-	background-color : #915BD3;
-	border : none;
-	color  : white;
-	
+	cursor : pointer;
 	height : 2.5em;
 	width  : 12em;
-	
-	cursor : pointer;
 }
 
 textarea {
@@ -73,6 +66,7 @@ textarea {
 	height : 35%;
 	width  : 84%;
 }
+
 
 /* Focus effect */
 

@@ -7,32 +7,41 @@
 }
 
 	.square {
+		border-bottom : 1px solid rgba(70, 70, 70, 0.1);
 		display : block;
 		float   : left;
 		height  : inherit;
 		width   : 19.5%;
 	}
 	
-	.square:first-child  { border-bottom-left-radius  : 0.4em; }
-	.square:last-child   { border-bottom-right-radius : 0.4em; }
+	.square:first-child {
+		border-left  : 1px solid rgba(70, 70, 70, 0.1);
+		border-bottom-left-radius  : 0.4em;
+	}
+
+	.square:last-child {
+		border-right : 1px solid rgba(70, 70, 70, 0.2);
+		border-bottom-right-radius : 0.4em;
+	}
 
 
 .about   { margin : 1em 0; }
 .about p { margin : 0;     }
 
-	#menu a {
-		display : block;
-		width   : 6em;
-	}
+#menu a {
+	display : block;
+	width   : 5.5em;
+}
 
 	.nav-item  {
 		border-radius : 5px;
+
 		line-height   : 1.5em;
 		margin-bottom : 0.2em;
-		width         : 6em;
+		padding-left  : 1em;
+
+		width         : 5.5em;
 	}
-	
-	.nav-item i { padding-left : 1em; }
 
 	.favicon {
 		border-radius : 4px;
@@ -41,8 +50,8 @@
 		margin-right : 1px;
 		padding : 4px;
 
-		height  : 16px;
-		width   : 16px;
+		height  : 1em;
+		width   : 1em;
 	}
 
 
@@ -64,19 +73,18 @@
 
 /***  'CV' Section  ***/
 
-.cv-pdf img {
-	width : 100%;
+#cv p {
+	margin : 0;
 }
 
-/*
-.cv-pdf {
-	border-top: 4px solid #CCC;
-	border-bottom: 4px solid #CCC;
-	
-	height: 1133px;
-	width: 820px;
+.skill { padding-bottom : 1.5em; }
+
+.button {
+	border-radius: 5px;
+	padding: 0.5em;
+	width: 9em;
+	text-align: center;
 }
-*/
 
 
 
@@ -86,34 +94,21 @@
 	margin-bottom : 3.125em;
 }
 	
-	.screenshot {
-		width : 40%;
-	}
-
 	.screenshot img {
 		border : 1px solid #DEDEDE;
 		border-radius : 5px;
-		box-shadow : 2px 5px 10px 1px #CCC;
+
 		width  : 100%;
+
+		-webkit-box-shadow : 2px 5px 10px 1px #CCC;
+		   -moz-box-shadow : 2px 5px 10px 1px #CCC;
+		     -o-box-shadow : 2px 5px 10px 1px #CCC;
+		        box-shadow : 2px 5px 10px 1px #CCC;
 	}
 
-	.profile {
-		width : 57%;
-	}
+	.techs { margin-bottom : 0.5em; }
 
-		.data a,
-		.profile a {
-			border-radius : 5px;
-			padding : 2px;
-		}
-
-		time { padding-top : 0.4em; }
-
-		/*
-		.techs {
-			padding-left : 1.5em;
-		}
-		*/
+	time { padding-top : 0.4em; }
 
 
 
@@ -124,14 +119,16 @@
 }
 
 	.book {
-		/* float : left; */
 		display : inline;
 		margin-right : 1em;
 	}
 
 		.book img {
-			width : 100px;
+			width  : 100px;
+			border : 1px solid #EEE;
+			border-radius : 5px;
 		}
+
 
 
 /***  'Contact' Section  ***/
@@ -145,9 +142,6 @@
 	margin-bottom : 1em;
 	height : 12em;
 }
-
-	.data a,
-	.data span { float : left; }
 
 	.data a   { margin-top : 8px;  }
 	#linkedin { margin-top : 12px; }	/* LinkedIn Fixed! */
