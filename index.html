@@ -1,4 +1,4 @@
-﻿<!Doctype html ->
+﻿<!DOCTYPE html>
 <html lang="en">
 <!-- html lang="en" manifest="offline.appcache" -->
 
@@ -19,23 +19,26 @@
 	<meta property="og:url"         content="http://albertoblazquez.net" />
 	<meta property="og:image"       content="" />
 
+
 	<!-- Web Title -->
 	<title>Alberto Blázquez</title>
+
 
 	<!-- CSS -->
 	<link type="text/css" rel="stylesheet" media="all" href="css/styles.css" />
 
-	<!-- JavaScript to provide an HTML5 Fallback in legacy browsers (motherfucking IE) -->
-	<script type="text/javascript" src="js/lib/html5shiv.min.js"></script>
 
-	<noscript>
-		If you are reading this text is because your web browser does not allow JavaScript. In that case, the website will not be viewed perfect so please, try to enable it or just change to a better browser.
-	</noscript>
+	<!-- JavaScript to provide an HTML5 Fallback in legacy browsers such as the fucking IE -->
+	<!-- [if IE]>
+		<script type="text/javascript" src="js/lib/fallback/html5shiv.min.js"></script>
+	<[endif] -->
 
 </head>
 
 
 <body>
+
+	<noscript>If you are reading this text is because your web browser does not allow JavaScript. In that case, the website will not be viewed perfect so please, try to enable it or just change to a better browser</noscript>
 
 	<div id="wrapper">
 	
@@ -66,9 +69,9 @@
 								<p>Dreamer who loves music and cinema</p>
 							</figcaption>
 						</figure>
-						<br>
-						<br>
 					</header>
+					<br>
+					<br>
 
 
 					<nav id="menu" class="single tabbed">
@@ -87,10 +90,6 @@
 						<br>
 						
 						<ul>
-							<!--li class="inline item">
-								<a target="_blank" title="Email" href="mailto:hola@albertoblazquez.net" class="favicon dark relief email"></a>
-							</li-->
-							
 							<li class="inline item">
 								<a target="_blank" title="Twitter" href="https://twitter.com/albertoblaz" class="favicon dark relief twitter"></a>
 							</li>
@@ -104,7 +103,7 @@
 							</li>
 
 							<li class="inline item">
-								<a target="_blank" title="FilmAffinity" href="http://www.filmaffinity.com/es/userratings.php?user_id=835985&orderby=0" class="favicon dark relief filmaffi"></a>
+								<a target="_blank" title="FilmAffinity" href="http://www.filmaffinity.com/es/userratings.php?user_id=835985&amp;orderby=0" class="favicon dark relief filmaffi"></a>
 							</li>
 
 							<li class="inline item">
@@ -124,9 +123,7 @@
 
 				<section id="home" class="content">
 
-					<figure>
-						<!--<img class="cover" src="img/home/cover.png" />-->
-
+					<figure style="height : 20em;">
 						<figcaption>
 							<hgroup class="title">
 								<h1 class="white">Alberto Blázquez</h1>
@@ -140,126 +137,142 @@
 				
 				<section id="cv" class="content">
 					
-					<div>
-						<a class="right" target="_blank" title="Download CV in PDF format" href="img/cv/CV_AlbertoBlazquez.pdf">
-							<div class="purple-bg relief button">Download CV</div>
-						</a>
+					<h2 class="hidden">Curriculum Vitae</h2>
 
-						<div id="education">
-							<h3><span class="purple">Education</span></h3>
-							<br>
+					<a class="right" target="_blank" title="Download CV in PDF format" href="img/cv/CV_AlbertoBlazquez.pdf">
+						<div class="purple-bg relief button">Download CV</div>
+					</a>
 
-							<div class="left columns four">
-								<h4><strong>Bachelor in Computer Science</strong></h4>
-								<p>Technical University of Madrid</p>
-								<p><time>Sep 2008</time> - <time>Jun 2012</time></p>
-							</div>
+					<div id="education">
+						<h3><span class="purple">Education</span></h3>
+						<br>
 
-							<div class="left columns four">
-								<h4><strong>Master on Software Engineering</strong></h4>
-								<p>Technical Univers. of Madrid (Spain)</p>
-								<p>Blekinge Institute of Tech. (Sweden)</p>
-								<p><time>Sep 2012</time> - <time>(Jun 2014)</time></p>
-							</div>
-
-							<div class="clear"></div>
+						<div class="left columns four">
+							<h4><strong>Bachelor in Computer Science</strong></h4>
+							<p>Technical University of Madrid</p>
+							<p class="date">Sep 2008 - Jun 2012</p>
 						</div>
-						<br>
+
+						<div class="left columns four">
+							<h4><strong>Master on Software Engineering</strong></h4>
+							<p>Technical Univers. of Madrid (Spain)</p>
+							<p>Blekinge Institute of Tech. (Sweden)</p>
+							<p class="date">Sep 2012 - (Jun 2014)</p>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+					<br>
+					<br>
+
+					<div id="skills" class="columns eleven">
+						<h3><span class="purple">Skills</span></h3>
 						<br>
 
-						<div id="skills">
-							<h3><span class="purple">Skills</span></h3>
-							<br>
-
-							<ul>
-								<li class="skill hci">
+						<ul>
+							<li class="skill">
+								<div class="left columns ten">
 									<h4><strong>Human-Computer Interaction and User Experience</strong></h4>
 									<p>Focused on User Interfaces Design and Usability tests to evaluate errors</p>
 									<p>I love to analyze user interaction to design better, more usable software</p>
-								</li>
+								</div>
+								<div class="left columns two cv-icon hci"></div>
+							</li>
 
-								<li class="skill ofp">
+							<li class="skill">
+								<div class="left columns ten">
 									<h4><strong>Object-Oriented and Functional Programming</strong></h4>
 									<p>Domain of Java, C# and C. Adequate on Python and Haskell</p>
 									<p>Basics of Ruby, PHP, Prolog and Ada. Wish to learn Erlang</p>
-								</li>
+								</div>
+								<div class="left columns two cv-icon ofp"></div>
+							</li>
 
-								<li class="skill web">
+							<li class="skill web">
+								<div class="left columns ten">
 									<h4><strong>Web Development and Design</strong></h4>
 									<p>HTML 5, CSS 3 and JavaScript using also jQuery and Backbone (1+ year)</p>
 									<p>MySQL, MongoDB,  REST APIs. Learning Django and Node.js</p>
-								</li>
+								</div>
+								<div class="left columns two cv-icon web"></div>
+							</li>
 
-								<li class="skill mad">
+							<li class="skill mad">
+								<div class="left columns ten">
 									<h4><strong>Mobile Applications Development</strong></h4>
 									<p>Learning by myself Objective-C to create iPhone and iPad apps</p>
 									<p>Also, interested in Android and Windows 8 platforms</p>
-								</li>
+								</div>
+								<div class="left columns two cv-icon mad"></div>
+							</li>
 
-								<li class="skill sad">
+							<li class="skill sad">
+								<div class="left columns ten">
 									<h4><strong>Software Engineering and Software Design</strong></h4>
 									<p>Interested in Software Archiectures with High Scalability and Reliability</p>
 									<p>Deep knowledge about UML, Design Patterns and Project Management</p>
-
-								</li>
-							</ul>
-						</div>
-						<br>
-						<br>
-
-						<div id="experience">
-							<h3><span class="purple">Experience</span></h3>
-							<br>
-
-							<div class="left columns four">
-								<h4 class="bold"><strong>Web Researcher</strong></h4>
-								<p>Open Innovation Lab</p>
-								<p>Technical University of Madrid</p>
-								<p><time>Jul 2012</time> - <time>(Jul 2013)</time></p>
-							</div>
-
-							<div class="left columns four">
-								<h4 class="bold"><strong>Web Developer and UX Designer</strong></h4>
-								<p>Software Engineering Lab</p>
-								<p>Technical University of Madrid</p>
-								<p><time>Feb 2012</time> - <time>Jul 2012</time></p>
-							</div>
-
-							<div class="left columns four">
-								<h4 class="bold"><strong>Java UI Developer</strong></h4>
-								<p>Deimos Space</p>
-								<p>Elecnor Deimos Group</p>
-								<p><time>Sep 2011</time> - <time>Feb 2012</time></p>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-						<br>
-						<br>
-
-						<div id="languages">
-							<h3><span class="purple">Languages</span></h3>
-							<br>
-
-							<div class="left columns four">
-								<h4 class="inline"><strong>Spanish</strong></h4>
-								<p class="inline">native language</p>
-							</div>
-
-							<div class="left columns four">
-								<h4 class="inline"><strong>English</strong></h4>
-								<p class="inline">medium-high level</p>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-						<br>
+								</div>
+								<div class="left columns two cv-icon sad"></div>
+							</li>
+						</ul>
 					</div>
+					<br>
+					<br>
+
+					<div id="experience">
+						<h3><span class="purple">Experience</span></h3>
+						<br>
+
+						<div class="left columns four">
+							<h4 class="bold"><strong>Web Researcher</strong></h4>
+							<p>Open Innovation Lab</p>
+							<p>Technical University of Madrid</p>
+							<p class="date">Jul 2012 - (Jul 2013)</p>
+						</div>
+
+						<div class="left columns four">
+							<h4 class="bold"><strong>Web Developer and UX Designer</strong></h4>
+							<p>Software Engineering Lab</p>
+							<p>Technical University of Madrid</p>
+							<p class="date">Feb 2012 - Jul 2012</p>
+						</div>
+
+						<div class="left columns four">
+							<h4 class="bold"><strong>Java UI Developer</strong></h4>
+							<p>Deimos Space</p>
+							<p>Elecnor Deimos Group</p>
+							<p class="date">Sep 2011 - Feb 2012</p>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+					<br>
+					<br>
+
+					<div id="languages">
+						<h3><span class="purple">Languages</span></h3>
+						<br>
+
+						<div class="left columns four">
+							<h4 class="inline"><strong>Spanish</strong></h4>
+							<p class="inline">native language</p>
+						</div>
+
+						<div class="left columns four">
+							<h4 class="inline"><strong>English</strong></h4>
+							<p class="inline">medium-high level</p>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+					<br>
 
 				</section>
 				
 				
 				<section id="projects" class="content">
+
+					<h2 class="hidden">Projects</h2>
 
 					<article id="v2-alberto-blazquez" class="project">
 						<figure class="left screenshot columns five">
@@ -271,7 +284,7 @@
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://albertoblazquez.net">Alberto Blázquez (v2)</a></h3>
-								<time class="right">20th August, 2012</time>
+								<p class="date right">20th August, 2012</p>
 								<div class="clear"></div>
 							</div>
 							
@@ -298,7 +311,7 @@
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://usabilityplanner.org">Usability Planner</a></h3>
-								<time class="right">30th June, 2012</time>
+								<p class="date right">30th June, 2012</p>
 								<div class="clear"></div>
 							</div>
 							
@@ -323,7 +336,7 @@
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left">Lujotar</h3>
-								<time class="right">30th May, 2012</time>
+								<p class="date right">30th May, 2012</p>
 								<div class="clear"></div>
 							</div>
 							
@@ -349,7 +362,7 @@
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://captacionupm.albertoblazquez.net">Captacion UPM</a></h3>
-								<time class="right">22th February, 2012</time>
+								<p class="date right">22th February, 2012</p>
 								<div class="clear"></div>
 							</div>
 							
@@ -376,7 +389,7 @@
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://cssoff.albertoblazquez.net">CSSOff Contest 2012</a></h3>
-								<time class="right">12th January, 2012</time>
+								<p class="date right">12th January, 2012</p>
 								<div class="clear"></div>
 							</div>
 							
@@ -403,7 +416,7 @@
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://galeria.albertoblazquez.net">Manuel Blázquez</a></h3>
-								<time class="right">23th November, 2011</time>
+								<p class="date right">23th November, 2011</p>
 								<div class="clear"></div>
 							</div>
 							
@@ -430,7 +443,7 @@
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://v1.albertoblazquez.net">Alberto Blázquez (v1)</a></h3>
-								<time class="right">25th August, 2011</time>
+								<p class="date right">25th August, 2011</p>
 								<div class="clear"></div>
 							</div>
 							
@@ -450,6 +463,8 @@
 
 				
 				<section id="books" class="content">
+
+					<h2 class="hidden">My Favourite Books</h2>
 
 					<article class="collection">
 						<h3>Software Engineering</h3>
@@ -498,9 +513,11 @@
 
 				<section id="contact" class="content">
 				
+					<h2 class="hidden">Contact Me</h2>
+
 					<div class="data">
 						
-						<div class="half left">
+						<div class="left columns five">
 							<h3 class="headline sub">Personal Info</h3>
 
 							<div>
@@ -524,7 +541,7 @@
 						</div>
 
 
-						<div class="half left">
+						<div class="left columns five">
 							<h3 class="headline sub">Online Presence</h3>
 
 							<div>
@@ -554,12 +571,13 @@
 						<h3 class="headline sub">Get in touch!</h3>
 						<br>
 						
-						<form method="post" action="php/contact.php">
-							<input type="text"  name="name"  class="half" placeholder="Name..." />
-							<input type="email" name="email" class="half" placeholder="Email..." />
+						<!-- form class="columns nine" method="post" action="php/contact.php" -->
+						<form  class="columns nine">
+							<div class="left  columns fivehalf"><input type="text"  id="name"  name="name"  placeholder="Name..."  /></div>
+							<div class="right columns fivehalf"><input type="email" id="email" name="email" placeholder="Email..." /></div>
 							
-							<textarea name="msg" placeholder="Write the message here..."></textarea>
-							<input id="submit" type="submit" class="white purple-bg relief" value="Send Mail" />
+							<textarea id="textarea" name="msg" placeholder="Write the message here..."></textarea>
+							<div id="submit" class="white purple-bg relief button">Send Mail</div>
 						</form>
 					</div>
 
@@ -577,7 +595,8 @@
 
 
 
-	<!-- JavaScript -->	
+	<!-- JavaScript -->
+
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="js/lib/jquery-ui-1.8.22.custom.min.js"></script>
 
@@ -598,10 +617,10 @@
 	-->
 
 	<script type="text/javascript" src="js/effects.js"></script>
-	<!-- script type="text/javascript" src="js/scroll.js"></script -->
 
-	<!-- script type="text/javascript" src="js/slide-menu.js"></script -->
-	
+	<!-- JavaScript Fallback to provide the HTML5 'Placeholder' feature in legacy browsers such as the fucking IE -->
+	<!--[if lte IE 9]>  <script type="text/javascript" src="js/fallback/placeholder.js"></script>  <![endif]-->
+
 </body>
 
 </html>
