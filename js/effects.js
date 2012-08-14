@@ -14,9 +14,9 @@
 
 	/* Global jQuery Objects */
 
-	var squares  = $('#colors').find('.square'),
-		links    = $('#menu').find('a'),
-		oldItem  = links.first();
+	var squares = $('#colors').find('.square'),
+		links   = $('#menu').find('a'),
+		oldItem = links.first();
 
 
 	/* Events Definition */
