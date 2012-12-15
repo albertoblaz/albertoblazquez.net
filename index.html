@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <!-- html lang="en" manifest="offline.appcache" -->
 
@@ -18,6 +18,7 @@
 	<meta property="og:description" content="Personal website created to display my CV and my skills" />
 	<meta property="og:url"         content="http://albertoblazquez.net" />
 	<meta property="og:image"       content="" />
+
 
 
 	<!-- Web Title -->
@@ -41,9 +42,9 @@
 	<noscript>If you are reading this text is because your web browser does not allow JavaScript. In that case, the website will not be viewed perfect so please, try to enable it or just change to a better browser</noscript>
 
 	<div id="wrapper">
-	
+
 		<div id="wrap" class="ten columns center">
-			
+
 			<aside id="sidebar" class="left three columns">
 
 				<div class="fixed">
@@ -61,9 +62,9 @@
 
 
 						<figure class="logo">
-							<img src="img/logo.png" alt="Alberto Blázquez" />
-							
-							<figcaption class="purple about">
+							<!--<img src="img/logo.png" alt="Alberto Blázquez" />-->
+
+							<figcaption class="about">
 								<p>Computer scientist born in Madrid</p>
 								<p>Technology enthusiast and autodidactic</p>
 								<p>Dreamer who loves music and cinema</p>
@@ -75,11 +76,13 @@
 
 
 					<nav id="menu" class="single tabbed">
-						<a class="white" href="#home">     <div class="nav-item dark relief active blue">Home</div> </a>
-						<a class="white" href="#cv">       <div class="nav-item dark relief">CV</div>               </a>
-						<a class="white" href="#projects"> <div class="nav-item dark relief">Projects</div>         </a>
-						<a class="white" href="#books">    <div class="nav-item dark relief">Fav Books</div>        </a>
-						<a class="white" href="#contact">  <div class="nav-item dark relief">Contact</div>          </a>
+						<ul>
+							<li><a class="white nav-item relief active blue" href="#home">Home</a></li>
+							<li><a class="white nav-item relief" href="#cv">CV</a></li>
+							<li><a class="white nav-item relief" href="#projects">Projects</a></li>
+							<li><a class="white nav-item relief" href="#books">Fav Books</a></li>
+							<li><a class="white nav-item relief" href="#contact">Contact</a></li>
+						</ul>
 					</nav>
 					<br>
 					<br>
@@ -88,26 +91,26 @@
 					<nav id="social" class="single tabbed">
 						<h3>Social Links</h3>
 						<br>
-						
+
 						<ul>
 							<li class="inline item">
-								<a target="_blank" title="Twitter" href="https://twitter.com/albertoblaz" class="favicon dark relief twitter"></a>
-							</li>
-							
-							<li class="inline item">
-								<a target="_blank" title="Linkedin" href="http://www.linkedin.com/in/albertoblaz" class="favicon dark relief linkedin"></a>
-							</li>
-							
-							<li class="inline item">
-								<a target="_blank" title="Last.FM" href="http://www.lastfm.es/user/LesPaul100" class="favicon dark relief lastfm"></a>
+								<a target="_blank" title="Twitter" href="https://twitter.com/albertoblaz" class="favicon relief twitter"></a>
 							</li>
 
 							<li class="inline item">
-								<a target="_blank" title="FilmAffinity" href="http://www.filmaffinity.com/es/userratings.php?user_id=835985&amp;orderby=0" class="favicon dark relief filmaffi"></a>
+								<a target="_blank" title="Linkedin" href="http://www.linkedin.com/in/albertoblaz" class="favicon relief linkedin"></a>
 							</li>
 
 							<li class="inline item">
-								<a target="_blank" title="GitHub" href="https://github.com/albertoblaz" class="favicon dark relief github"></a>
+								<a target="_blank" title="Last.FM" href="http://www.lastfm.es/user/LesPaul100" class="favicon relief lastfm"></a>
+							</li>
+
+							<li class="inline item">
+								<a target="_blank" title="FilmAffinity" href="http://www.filmaffinity.com/es/userratings.php?user_id=835985&amp;orderby=0" class="favicon relief filmaffi"></a>
+							</li>
+
+							<li class="inline item">
+								<a target="_blank" title="GitHub" href="https://github.com/albertoblaz" class="favicon relief github"></a>
 							</li>
 
 						</ul>
@@ -116,9 +119,9 @@
 				</div>
 
 			</aside>
-			
-			
-			
+
+
+
 			<div id="container" class="right eight columns">
 
 				<section id="home" class="content">
@@ -127,20 +130,20 @@
 						<figcaption>
 							<hgroup class="title">
 								<h1 class="white">Alberto Blázquez</h1>
-								<h2 class="white">Computer Scientist, Software Engineer and Web Developer</h2>
+								<h2 class="white">Software Engineer, Web Developer and UX Designer</h2>
 							</hgroup>
 						</figcaption>
 					</figure>
 
 				</section>
-				
-				
+
+
 				<section id="cv" class="content">
-					
+
 					<h2 class="hidden">Curriculum Vitae</h2>
 
 					<a class="right" target="_blank" title="Download CV in PDF format" href="img/cv/CV_AlbertoBlazquez.pdf">
-						<div class="purple-bg relief button">Download CV</div>
+						<div class="relief button">Download CV</div>
 					</a>
 
 					<div id="education">
@@ -209,7 +212,7 @@
 							<li class="skill sad">
 								<div class="left columns ten">
 									<h4><strong>Software Engineering and Software Design</strong></h4>
-									<p>Interested in Software Archiectures with High Scalability and Reliability</p>
+									<p>Interested in Software Architectures with High Scalability and Reliability</p>
 									<p>Deep knowledge about UML, Design Patterns and Project Management</p>
 								</div>
 								<div class="left columns two cv-icon sad"></div>
@@ -225,8 +228,8 @@
 
 						<div class="left columns four">
 							<h4 class="bold"><strong>Web Researcher</strong></h4>
-							<p>Open Innovation Lab</p>
-							<p>Technical University of Madrid</p>
+							<p>Telefónica Digital (R+D branch)</p>
+							<br />
 							<p class="date">Jul 2012 - (Jul 2013)</p>
 						</div>
 
@@ -268,200 +271,256 @@
 					<br>
 
 				</section>
-				
-				
+
+
 				<section id="projects" class="content">
 
 					<h2 class="hidden">Projects</h2>
 
+					<article id="scrumptiously" class="project">
+						<figure class="left screenshot scrumptiously columns five"></figure>
+
+						<div class="right profile columns sixhalf">
+							<div>
+								<h3 class="left">Scrumptiously</h3>
+								<p class="date right">21th December, 2012</p>
+								<div class="clear"></div>
+							</div>
+
+							<p class="description">A simple web application to manage Scrum projects for a Master's subject about Agile methodologies</p>
+							<p class="techs">Java, HTML5, CSS3, jQuery, Bootstrap</p>
+
+							<!--<div>
+								<a class="ib purple transition" target="_blank" href="http://github.com/albertoblaz/v2.albertoblazquez.net">Code</a>
+								<a class="ib purple transition" target="_blank" href="http://albertoblazquez.net">Link</a>
+							</div>-->
+						</div>
+
+						<div class="clear"></div>
+					</article>
+
+
+					<article id="webgl-benchmarking" class="project">
+						<figure class="left screenshot webgl-benchmarking columns five"></figure>
+
+						<div class="right profile columns sixhalf">
+							<div>
+								<h3 class="left">WebGL Benchmarking Tool</h3>
+								<p class="date right">14th December, 2012</p>
+								<div class="clear"></div>
+							</div>
+
+							<p class="description">At Telefónica I+D. Real-time app to measure a system perfomance using WebSockets and WebGL graphics</p>
+							<p class="techs">WebGL (Three.js), JavaScript, HTML5, CSS3</p>
+
+							<div>
+								<a class="ib purple transition" target="_blank" href="https://github.com/telefonicaid/PopBox/tree/unstable/benchmark/public">Code</a>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+					</article>
+
+
+					<article id="webgl-experiments" class="project">
+						<a target="_blank" title="WebGL Experiments" href="http://webgl.albertoblazquez.net">
+							<figure class="left screenshot webgl-experiments columns five"></figure>
+						</a>
+
+						<div class="right profile columns sixhalf">
+							<div>
+								<h3 class="left"><a class="purple transition" target="_blank" href="http://webgl.albertoblazquez.net">WebGL Experiments Visualizator</a></h3>
+								<p class="date right">14th December, 2012</p>
+								<div class="clear"></div>
+							</div>
+
+							<p class="description">At Telefónica I+D. Tool to test and play with simple scenarios using 3 different WebGL Frameworks</p>
+							<p class="techs">WebGL (Three.js, CubicVR, Jax), JavaScript, HTML5, CSS3</p>
+
+							<div>
+								<a class="ib purple transition" target="_blank" href="https://github.com/PDI-DGS-Protolab/WebGLExperiments">Code</a>
+								<a class="ib purple transition" target="_blank" href="http://webgl.albertoblazquez.net">Link</a>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+					</article>
+
+
 					<article id="v2-alberto-blazquez" class="project">
-						<figure class="left screenshot columns five">
-							<a target="_blank" href="http://albertoblazquez.net">
-								<img src="img/projects/v2-alberto-blazquez.jpg" alt="Alberto Blázquez (v2)" />
-							</a>
-						</figure>
-						
+						<a target="_blank" title="Alberto Blázquez (v2)" href="http://albertoblazquez.net">
+							<figure class="left screenshot v2-alberto-blazquez columns five"></figure>
+						</a>
+
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://albertoblazquez.net">Alberto Blázquez (v2)</a></h3>
 								<p class="date right">20th August, 2012</p>
 								<div class="clear"></div>
 							</div>
-							
+
 							<p class="description">Simple and minimalist re-design of my personal website creating a second version, the last one developed</p>
 							<p class="techs">HTML5, CSS3, jQuery</p>
-							
+
 							<div>
 								<a class="ib purple transition" target="_blank" href="http://github.com/albertoblaz/v2.albertoblazquez.net">Code</a>
 								<a class="ib purple transition" target="_blank" href="http://albertoblazquez.net">Link</a>
 							</div>
 						</div>
-						
+
 						<div class="clear"></div>
 					</article>
 
 
 					<article id="usability-planner" class="project">
-						<figure class="left screenshot columns five">
-							<a target="_blank" href="http://usabilityplanner.org">
-								<img src="img/projects/usability-planner.jpg" alt="Usability Planner v2" />
-							</a>
-						</figure>
-						
+						<a target="_blank" title="Usability Planner" href="http://up.albertoblazquez.net">
+							<figure class="left screenshot usability-planner columns five"></figure>
+						</a>
+
 						<div class="right profile columns sixhalf">
 							<div>
-								<h3 class="left"><a class="purple transition" target="_blank" href="http://usabilityplanner.org">Usability Planner</a></h3>
+								<h3 class="left"><a class="purple transition" target="_blank" href="http://up.albertoblazquez.net">Usability Planner</a></h3>
 								<p class="date right">30th June, 2012</p>
 								<div class="clear"></div>
 							</div>
-							
+
 							<p class="description">Re-design of a web app to recommendate developers the best Usability methods based on their projects constraints</p>
 							<p class="techs">HTML5, CSS3, JavaScript, Backbone, jQuery, PHP, XSLT</p>
-							
+
 							<div>
 								<a class="ib purple transition" target="_blank" href="http://github.com/albertoblaz/usability-planner">Code</a>
-								<a class="ib purple transition" target="_blank" href="http://usabilityplanner.org">Link</a>
+								<a class="ib purple transition" target="_blank" href="http://up.albertoblazquez.net">Link</a>
 							</div>
 						</div>
-						
+
 						<div class="clear"></div>
 					</article>
 
 
 					<article id="lujotar" class="project">
-						<figure class="left screenshot columns five">
-							<img src="img/projects/lujotar.jpg" alt="Lujotar" />
-						</figure>
-						
+						<figure class="left screenshot lujotar columns five"></figure>
+
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left">Lujotar</h3>
 								<p class="date right">30th May, 2012</p>
 								<div class="clear"></div>
 							</div>
-							
+
 							<p class="description">Web app developed during the <em>Software Engineering 2</em> subject which consisted on an imaginary luxury shop</p>
 							<p class="techs">Java, JSF, JSP, jQuery, MySQL</p>
-							
+
 							<div>
 								<a class="ib purple transition" target="_blank" href="http://github.com/proyecto-lujotar/lujotar">Code</a>
 							</div>
 						</div>
-						
+
 						<div class="clear"></div>
 					</article>
 
 
 					<article id="captacion-upm" class="project">
-						<figure class="left screenshot columns five">
-							<a target="_blank" href="http://captacionupm.albertoblazquez.net">
-								<img src="img/projects/captacion-upm.jpg" alt="Captacion UPM" />
-							</a>
-						</figure>
-						
+						<a target="_blank" title="Captacion UPM" href="http://captacionupm.albertoblazquez.net">
+							<figure class="left screenshot captacion-upm columns five"></figure>
+						</a>
+
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://captacionupm.albertoblazquez.net">Captacion UPM</a></h3>
 								<p class="date right">22th February, 2012</p>
 								<div class="clear"></div>
 							</div>
-							
+
 							<p class="description">Web version of an iPad app made by two co-workers in the university to uptake future students in the <em>AULA 2012 Event</em></p>
 							<p class="techs">HTML4, CSS2, jQuery, PHP, XSLT</p>
-							
+
 							<div>
 								<a class="ib purple transition" target="_blank" href="http://github.com/albertoblaz/captacion-upm">Code</a>
 								<a class="ib purple transition" target="_blank" href="http://captacionupm.albertoblazquez.net">Link</a>
 							</div>
 						</div>
-						
+
 						<div class="clear"></div>
 					</article>
 
 
 					<article id="cssoff-2012" class="project">
-						<figure class="left screenshot columns five">
-							<a target="_blank" href="http://cssoff.albertoblazquez.net">
-								<img src="img/projects/cssoff.jpg" alt="CSSOff Contest 2012" />
-							</a>
-						</figure>
-						
+						<a target="_blank" title="CSSOff Contest 2012" href="http://cssoff.albertoblazquez.net">
+							<figure class="left screenshot cssoff-2012 columns five"></figure>
+						</a>
+
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://cssoff.albertoblazquez.net">CSSOff Contest 2012</a></h3>
 								<p class="date right">12th January, 2012</p>
 								<div class="clear"></div>
 							</div>
-							
+
 							<p class="description">Web site co-developed with <a class="purple transition" target="_blank" href="http://guillemandreu.com">Guillem Andreu</a> for the <em>CSSOff Design Contest</em> in 2012</p>
 							<p class="techs">HTML5, CSS3, jQuery</p>
-							
+
 							<div>
 								<a class="ib purple transition" target="_blank" href="http://github.com/albertoblaz/cssoff-2012">Code</a>
 								<a class="ib purple transition" target="_blank" href="http://cssoff.albertoblazquez.net">Link</a>
 							</div>
 						</div>
-						
+
 						<div class="clear"></div>
 					</article>
 
 
 					<article id="manuel-blazquez" class="project">
-						<figure class="left screenshot columns five">
-							<a target="_blank" href="http://galeria.albertoblazquez.net">
-								<img src="img/projects/manuel-blazquez.jpg" alt="Manuel Blázquez" />
-							</a>
-						</figure>
-						
+						<a target="_blank" title="Manuel Blázquez" href="http://galeria.albertoblazquez.net">
+							<figure class="left screenshot manuel-blazquez columns five"></figure>
+						</a>
+
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://galeria.albertoblazquez.net">Manuel Blázquez</a></h3>
 								<p class="date right">23th November, 2011</p>
 								<div class="clear"></div>
 							</div>
-							
+
 							<p class="description">Web site with the watercolor paintings made by my father, <a class="purple transition" target="_blank" href="http://galeria.albertoblazquez.net">Manuel Blázquez</a></p>
 							<p class="techs">HTML5, CSS3, jQuery</p>
-							
+
 							<div>
 								<a class="ib purple transition" target="_blank" href="http://github.com/albertoblaz/manuelblazquez.es">Code</a>
 								<a class="ib purple transition" target="_blank" href="http://galeria.albertoblazquez.net">Link</a>
 							</div>
 						</div>
-						
+
 						<div class="clear"></div>
 					</article>
 
 
 					<article id="v1-alberto-blazquez" class="project">
-						<figure class="left screenshot columns five">
-							<a target="_blank" href="http://v1.albertoblazquez.net">
-								<img src="img/projects/v1-alberto-blazquez.jpg" alt="Alberto Blázquez (v1)" />
-							</a>
-						</figure>
-						
+						<a target="_blank" title="Alberto Blázquez (v1)" href="http://v1.albertoblazquez.net">
+							<figure class="left screenshot v1-alberto-blazquez columns five"></figure>
+						</a>
+
 						<div class="right profile columns sixhalf">
 							<div>
 								<h3 class="left"><a class="purple transition" target="_blank" href="http://v1.albertoblazquez.net">Alberto Blázquez (v1)</a></h3>
 								<p class="date right">25th August, 2011</p>
 								<div class="clear"></div>
 							</div>
-							
+
 							<p class="description">The first version of my personal website using a Wordpress theme and doing little changes to learn a bit of web design</p>
 							<p class="techs">HTML4, CSS2, Wordpress</p>
-							
+
 							<div>
 								<a class="ib purple transition" target="_blank" href="http://github.com/albertoblaz/v1.albertoblazquez.net">Code</a>
 								<a class="ib purple transition" target="_blank" href="http://v1.albertoblazquez.net">Link</a>
 							</div>
 						</div>
-						
+
 						<div class="clear"></div>
 					</article>
 
 				</section>
 
-				
+
 				<section id="books" class="content">
 
 					<h2 class="hidden">My Favourite Books</h2>
@@ -471,7 +530,7 @@
 						<br>
 
 						<ul>
-							<li class="book"><img src="img/books/se/design-patterns.png" alt="Design Patterns"/></li>
+							<li class="book dp"></li>
 						</ul>
 					</article>
 
@@ -480,11 +539,11 @@
 						<br>
 
 						<ul>
-							<li class="book"><img src="img/books/prog/csharp.jpg"    alt="Learning C#"/></li>
-							<li class="book"><img src="img/books/prog/haskell.jpg"   alt="Real World Haskell"/></li>
-							<li class="book"><img src="img/books/prog/php-mysql.jpg" alt="PHP and MySQL"/></li>
-							<li class="book"><img src="img/books/prog/python.jpg"    alt="Learning Python"/></li>
-							<li class="book"><img src="img/books/prog/ruby.jpg"      alt="The Ruby Programming Langauge"/></li>
+							<li class="book csharp"></li>
+							<li class="book haskell"></li>
+							<li class="book php"></li>
+							<li class="book python"></li>
+							<li class="book ruby"></li>
 						</ul>
 					</article>
 
@@ -493,9 +552,9 @@
 						<br>
 
 						<ul>
-							<li class="book"><img src="img/books/web/javascript.jpg" alt="JavaScript: The Good Parts"/></li>
-							<li class="book"><img src="img/books/web/rwd.jpg"        alt="Responsive Web Design"/></li>
-							<li class="book"><img src="img/books/web/smacss.png"     alt="Scalable and Modular Architecture for CSS"/></li>
+							<li class="book js"></li>
+							<li class="book rwd"></li>
+							<li class="book smacss"></li>
 						</ul>
 					</article>
 
@@ -504,7 +563,7 @@
 						<br>
 
 						<ul>
-							<li class="book"><img src="img/books/hci/design-everyday-things.jpg" alt="The Design of Everyday Things"/></li>
+							<li class="book det"></li>
 						</ul>
 					</article>
 
@@ -512,28 +571,28 @@
 
 
 				<section id="contact" class="content">
-				
+
 					<h2 class="hidden">Contact Me</h2>
 
 					<div class="data">
-						
+
 						<div class="left columns five">
-							<h3 class="headline sub">Personal Info</h3>
+							<h3 class="headline">Personal Info</h3>
 
 							<div>
-								<span class="left ib icon email"></span>
+								<span class="icon email"></span>
 								<a class="left purple transition" target="_blank" href="mailto:hola@albertoblazquez.net">hola@albertoblazquez.net</a>
 								<div class="clear"></div>
 							</div>
 
 							<div>
-								<span class="left ib icon phone"></span>
+								<span class="icon phone"></span>
 								<a class="left purple transition" href="callto:0034618772481">0034 618 77 24 81</a>
 								<div class="clear"></div>
 							</div>
 
 							<div>
-								<span class="left ib icon skype"></span>
+								<span class="icon skype"></span>
 								<a class="left purple transition" href="callto://albertoblaz">albertoblaz</a>
 								<div class="clear"></div>
 							</div>
@@ -542,22 +601,22 @@
 
 
 						<div class="left columns five">
-							<h3 class="headline sub">Online Presence</h3>
+							<h3 class="headline">Online Presence</h3>
 
 							<div>
-								<span class="left ib icon twitter"></span>
+								<span class="icon twitter"></span>
 								<a class="left purple transition" target="_blank" href="https://twitter.com/albertoblaz">@albertoblaz</a>
 								<div class="clear"></div>
 							</div>
 
 							<div>
-								<span class="left ib icon linkedin"></span>
+								<span class="icon linkedin"></span>
 								<a class="left purple transition" target="_blank" href="http://www.linkedin.com/in/albertoblaz">LinkedIn account</a>
 								<div class="clear"></div>
 							</div>
 
 							<div>
-								<span class="left ib icon github"></span>
+								<span class="icon github"></span>
 								<a class="left purple transition" target="_blank" href="https://github.com/albertoblaz">GitHub profile</a>
 								<div class="clear"></div>
 							</div>
@@ -568,16 +627,24 @@
 
 
 					<div class="touch">
-						<h3 class="headline sub">Get in touch!</h3>
+						<h3 class="headline">Get in touch!</h3>
 						<br>
-						
-						<!-- form class="columns nine" method="post" action="php/contact.php" -->
-						<form  class="columns nine">
-							<div class="left  columns fivehalf"><input type="text"  id="name"  name="name"  placeholder="Name..."  /></div>
-							<div class="right columns fivehalf"><input type="email" id="email" name="email" placeholder="Email..." /></div>
-							
-							<textarea id="textarea" name="msg" placeholder="Write the message here..."></textarea>
-							<div id="submit" class="white purple-bg relief button">Send Mail</div>
+
+						<form id="form" class="columns nine">
+							<div class="left  columns fivehalf">
+								<input type="email" id="email"   name="email"   placeholder="Email..." required />
+							</div>
+							<div class="right columns fivehalf">
+								<input type="text"  id="subject" name="subject" placeholder="Subject (optional)..." />
+							</div>
+
+							<textarea id="message" name="message" placeholder="Write the message here..."></textarea>
+
+							<div id="submit" class="white relief button">
+								<input type="submit" class="hidden" />
+								<p>Send Mail</p>
+							</div>
+							<output id="output" class="left single tabbed hidden output"></output>
 						</form>
 					</div>
 
@@ -585,10 +652,10 @@
 
 			</div>
 
-			
-			
+
+
 			<div class="clear"></div>
-			
+
 		</div>
 
 	</div>
@@ -598,10 +665,11 @@
 	<!-- JavaScript -->
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/lib/jquery-ui-1.8.22.custom.min.js"></script>
+	<script type="text/javascript" src="js/effects.min.js"></script>
 
-	<script type="text/javascript" src="js/lib/plugins/jquery.scroll.min.js"></script>
-	
+	<script type="text/javascript" src="js/effects.js"></script>
+
+
 	<!--
 	<script async type="text/javascript">
 		if ( !window.jQuery ) {
@@ -616,7 +684,7 @@
 	</script>
 	-->
 
-	<script type="text/javascript" src="js/effects.js"></script>
+
 
 	<!-- JavaScript Fallback to provide the HTML5 'Placeholder' feature in legacy browsers such as the fucking IE -->
 	<!--[if lte IE 9]>  <script type="text/javascript" src="js/fallback/placeholder.js"></script>  <![endif]-->

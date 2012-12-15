@@ -28,14 +28,10 @@
 .about   { margin : 1em 0; }
 .about p { margin : 0;     }
 
-#menu a {
-	display : block;
-	width   : 5.5em;
-}
-
 	.nav-item  {
-		border-radius : 5px;
+		display : block;
 
+		border-radius : 5px;
 		line-height   : 1.5em;
 		margin-bottom : 0.2em;
 		padding-left  : 1em;
@@ -87,6 +83,8 @@
 	width   : 9em;
 }
 
+	.button p { margin : 0; }
+
 .skill {
 	padding-bottom : 1em;
 	height : 4em;
@@ -101,12 +99,15 @@
 .project {
 	margin-bottom : 3.125em;
 }
-	
-	.screenshot img {
+
+	.screenshot {
 		border        : 1px solid #DEDEDE;
 		border-radius : 5px;
         box-shadow    : 2px 5px 10px 1px #CCC;
-		width  : 100%;
+
+		display : block;
+		height  : 135px;
+		width   : 301px;
 	}
 
 	.date {
@@ -125,8 +126,10 @@
 }
 
 	.book {
-		display : inline;
+		display : inline-block;
 		margin-right : 1em;
+		height : 131px;
+		width  : 100px;
 	}
 
 		.book img {
@@ -139,7 +142,7 @@
 
 /***  'Contact' Section  ***/
 
-#contact h3 {
+.headline {
 	margin-bottom : 0.5em;
 	padding-left  : 10px
 }
@@ -147,9 +150,11 @@
 .data { margin-bottom: 2.6em; }
 
 	.data a   { margin-top : 8px;  }
-	#linkedin { margin-top : 12px; }	/* LinkedIn Fixed! */
 
 	.icon {
+		display : inline-block;
+		float   : left;
+
 		height  : 40px;
 		width   : 50px;
 	}

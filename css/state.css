@@ -3,6 +3,9 @@
 
 .hidden { display : none; }
 
+.output.success { background-color : blue; color : green; }
+.output.failure { background-color : blue; color : red; }
+
 .transition {
 	border-radius : 5px;
 	margin-left   : -2px;
@@ -21,6 +24,7 @@
 .favicon {
     -webkit-transition : background .2s ease-in-out;
 	   -moz-transition : background .2s ease-in-out;
+	    -ms-transition : background .2s ease-in-out;
 	     -o-transition : background .2s ease-in-out;
 	        transition : background .2s ease-in-out;
 }
@@ -28,6 +32,7 @@
 .transition {
 	-webkit-transition : background .3s ease-in, color .2s ease-in-out;
 	   -moz-transition : background .3s ease-in, color .2s ease-in-out;
+	    -ms-transition : background .3s ease-in, color .2s ease-in-out;
 	     -o-transition : background .3s ease-in, color .2s ease-in-out;
 	        transition : background .3s ease-in, color .2s ease-in-out;
 }
@@ -35,6 +40,7 @@
 .nav-item {
 	-webkit-transition : background .3s ease-in-out, padding .2s ease-in-out;
 	   -moz-transition : background .3s ease-in-out, padding .2s ease-in-out;
+	    -ms-transition : background .3s ease-in-out, padding .2s ease-in-out;
 	     -o-transition : background .3s ease-in-out, padding .2s ease-in-out;
 	        transition : background .3s ease-in-out, padding .2s ease-in-out;
 }
@@ -45,6 +51,7 @@
 .square {
 	-webkit-transition : padding .2s ease-in-out;
 	   -moz-transition : padding .2s ease-in-out;
+	    -ms-transition : padding .2s ease-in-out;
 	     -o-transition : padding .2s ease-in-out;
 	        transition : padding .2s ease-in-out;
 }
@@ -55,33 +62,69 @@
 
 /***  URL Icons  ***/
 
-.cv-icon        { background : no-repeat center top;  }
-.icon, .favicon { background : no-repeat center center; }
+.cv-icon { background : no-repeat center top;    }
+.favicon { background : no-repeat center center; }
+
+
+/* Projects Images */
+
+
+
+.screenshot { background : url(../img/projects.jpg) no-repeat; }
+ 
+.screenshot.lujotar             { background-position : 0    0px; }
+.screenshot.captacion-upm       { background-position : 0 -151px; }
+.screenshot.usability-planner   { background-position : 0 -293px; }
+.screenshot.cssoff-2012         { background-position : 0 -436px; }
+.screenshot.manuel-blazquez     { background-position : 0 -581px; }
+.screenshot.v2-alberto-blazquez { background-position : 0 -721px; }
+.screenshot.v1-alberto-blazquez { background-position : 0 -862px; }
 
 
 /* CV Icons */
 
-.cv-icon.hci { background-image : url('../img/cv/hci.jpg'); }
-.cv-icon.ofp { background-image : url('../img/cv/ofp.jpg'); }
-.cv-icon.web { background-image : url('../img/cv/web.jpg'); }
-.cv-icon.mad { background-image : url('../img/cv/mad.jpg'); }
-.cv-icon.sad { background-image : url('../img/cv/sad.jpg'); }
+.cv-icon.hci { background-image : url(../img/cv/hci.jpg); }
+.cv-icon.ofp { background-image : url(../img/cv/ofp.jpg); }
+.cv-icon.web { background-image : url(../img/cv/web.jpg); }
+.cv-icon.mad { background-image : url(../img/cv/mad.jpg); }
+.cv-icon.sad { background-image : url(../img/cv/sad.jpg); }
+
+
+/* Books Icons */
+
+.book { background : url(../img/books.jpg) no-repeat; }
+ 
+.book.det     { background-position :    0px    0;   }
+.book.csharp  { background-position : -100px    0;   }
+.book.python  { background-position : -200px    0;   }
+
+.book.php     { background-position :    0px -131px; }
+.book.js      { background-position : -100px -131px; }
+.book.ruby    { background-position : -200px -131px; }
+
+.book.smacss  { background-position :    0px -262px; }
+.book.dp      { background-position : -100px -262px; }
+.book.rwd     { background-position : -200px -262px; }
+
+.book.haskell { background-position :    0px -393px; }
 
 
 /* Contact Icons */
 
-.icon.email    { background-image : url('../img/contact/email.png');    }
-.icon.phone    { background-image : url('../img/contact/phone.png');    }
-.icon.skype    { background-image : url('../img/contact/skype.png');    }
-.icon.twitter  { background-image : url('../img/contact/twitter.png');  }
-.icon.linkedin { background-image : url('../img/contact/linkedin.png'); }
-.icon.github   { background-image : url('../img/contact/github.png');   }
+.icon { background : url(../img/contact.jpg) no-repeat; }
+
+.icon.email    { background-position :    0px  -7px; }
+.icon.phone    { background-position :  -50px  -7px; }
+.icon.skype    { background-position : -101px  -6px; }
+.icon.twitter  { background-position : -148px  -7px; }
+.icon.linkedin { background-position : -200px -11px; }
+.icon.github   { background-position : -249px  -9px; }
 
 
 /* Sidebar Favicons */
 
-.favicon.twitter  { background-image : url('../img/favicons/twitter.png');  }
-.favicon.linkedin { background-image : url('../img/favicons/linkedin.png'); }
-.favicon.github   { background-image : url('../img/favicons/github.png');   }
-.favicon.lastfm   { background-image : url('../img/favicons/lastfm.png');   }
-.favicon.filmaffi { background-image : url('../img/favicons/filmaffi.png'); }
+.favicon.twitter  { background-image : url(../img/favicons/twitter.png);  }
+.favicon.linkedin { background-image : url(../img/favicons/linkedin.png); }
+.favicon.github   { background-image : url(../img/favicons/github.png);   }
+.favicon.lastfm   { background-image : url(../img/favicons/lastfm.png);   }
+.favicon.filmaffi { background-image : url(../img/favicons/filmaffi.png); }
