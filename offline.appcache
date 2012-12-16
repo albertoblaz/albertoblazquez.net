@@ -1,33 +1,22 @@
-#CACHE
+CACHE MANIFEST
+
+
+CACHE:
 
 index.html
 
-css/base.css
-css/layout.css
-css/modules.css
-css/state.css
-css/theme.css
+css/styles.css
 
-
-js/lib/html5.js
 js/lib/jquery-1.7.2.min.js
-js/lib/jquery-ui-1.8.22.custom.min.js
-
-js/lib/plugins/jquery.scrollTo.min.js
-js/lib/plugins/jquery.localScroll.min.js
-
 js/effects.min.js
-js/scroll.min.js
 
+img/sprite.png
 
 fonts/
 
-img/projects
-img/hobbies
-img/favicons/
-img/cv/
-img/contact
 
-#NETWORK
+
+
+NETWORK:
 
 php/contact.php
