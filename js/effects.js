@@ -31,10 +31,13 @@
 
     function linksEvent( e ) {
 
+        // Preventing default event behaviour
+        e.preventDefault();
+
         // Local jQuery vars
         var newItem   = $(this),
-            oldPos    = oldItem.parent().prevAll().length,
-            newPos    = newItem.parent().prevAll().length,
+            oldPos    = oldItem.parent().index(),
+            newPos    = newItem.parent().index(),
             target    = $( newItem.attr('href') ),
             className = ACTIVE;
 
@@ -45,25 +48,20 @@
             className = COLORS[oldPos] + " " + ACTIVE;
         }
 
-        oldItem.children().removeClass(className, ITEMS_SPEED);
+        oldItem.removeClass(className, ITEMS_SPEED);
 
-        newItem.children()
-            .addClass(COLORS[newPos])
-            .addClass(ACTIVE, ITEMS_SPEED);
+        newItem.addClass(COLORS[newPos])
+               .addClass(ACTIVE, ITEMS_SPEED);
 
 
         // Updating the current active item
         oldItem = newItem;
 
-
-        // Preventing default event behaviour and using 'Nullify' pattern
-        e.preventDefault();
-        newItem = oldPos = newPos = target = className = null;
     }
 
 
     function squaresEvent() {
-        var pos = $(this).prevAll().length;
+        var pos = $(this).index();
         links.eq(pos).trigger('click');
     }
 
