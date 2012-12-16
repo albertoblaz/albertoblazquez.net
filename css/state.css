@@ -71,7 +71,7 @@
 
 
 .screenshot { background : url(../img/projects.jpg) no-repeat; }
- 
+
 .screenshot.lujotar             { background-position : 0    0px; }
 .screenshot.captacion-upm       { background-position : 0 -151px; }
 .screenshot.usability-planner   { background-position : 0 -293px; }
@@ -79,6 +79,11 @@
 .screenshot.manuel-blazquez     { background-position : 0 -581px; }
 .screenshot.v2-alberto-blazquez { background-position : 0 -721px; }
 .screenshot.v1-alberto-blazquez { background-position : 0 -862px; }
+
+.screenshot.webgl-benchmarking  { background : url(../img/projects/webgl-benchmarking.jpg) no-repeat; }
+.screenshot.webgl-experiments   { background : url(../img/projects/webgl-experiments.jpg) no-repeat;  }
+.screenshot.scrumptiously       { background : url(../img/projects/scrumptiously.jpg) no-repeat;      }
+
 
 
 /* CV Icons */
@@ -93,7 +98,7 @@
 /* Books Icons */
 
 .book { background : url(../img/books.jpg) no-repeat; }
- 
+
 .book.det     { background-position :    0px    0;   }
 .book.csharp  { background-position : -100px    0;   }
 .book.python  { background-position : -200px    0;   }
